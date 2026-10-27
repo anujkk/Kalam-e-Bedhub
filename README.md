@@ -4,6 +4,10 @@
 
 ---
 
+Official website: https://anujkk.github.io/Kalam-e-Bedhub/
+
+---
+
 ## 📖 Overview
 
 **Kalam-e-Bedhab** is an online, open-access reading edition of the poetry collection by **Brij Kishore Narayan ‘Bedhab’ Gayawi** (1885–1958). Originally compiled from scattered works and published in December 1983 with financial assistance from the Bihar Urdu Academy, this website brings the complete work into an accessible digital format for readers worldwide.
@@ -58,7 +62,7 @@ To ensure anyone can comfortably read and enjoy his work, the entire collection 
 ---
 ## 🚀 Read Online
 
-Official website: http://localhost:8000
+Official website: https://anujkk.github.io/Kalam-e-Bedhub/
 
 ## 🚀 Running Locally
 
