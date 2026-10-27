@@ -86,5 +86,5 @@ No build tools, bundlers, or server runtimes are required.
 
 ## 🤝 Credits & Acknowledgments
 
-* **Preservation & Compilation:** Ravindra Kumar Ravi (for compiling the original 1983 anthology)[cite: 1].
-* **Website Development & Maintenance:** Anuj Kumar & Anshu Kumar[cite: 1].
+* **Preservation & Compilation:** Ravindra Kumar Ravi (for compiling the original 1983 anthology).
+* **Website Development & Maintenance:** Anuj Kumar & Anshu Kumar.
