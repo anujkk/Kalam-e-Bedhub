@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>मिसरा-ए-तरह : कहाँ पे चोट लगी है बता नहीं सकते - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 57;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_056.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="57" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_058.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">५३</div>
+        <h2 class="section-heading" style="text-align: center;">मिसरा-ए-तरह : कहाँ पे चोट लगी है बता नहीं सकते</h2><div class="couplet-group"><div class="couplet"><div class="misra left">मुवक्किलों की हजामत बना नहीं सकते</div><div class="misra right">जो उल्टी-पलटी नज़ीरें दिखा नहीं सकते</div></div><div class="couplet"><div class="misra left">कभी भी बातों में इस को उड़ा नहीं सकते</div><div class="misra right">कि आप मैना को उल्लू बना नहीं सकते</div></div><div class="couplet"><div class="misra left">वो मेम को कभी पंजे में ला नहीं सकते</div><div class="misra right">जो ख़ुद भी नाच के इस को नचा नहीं सकते</div></div><div class="couplet"><div class="misra left">हमारी मूँछ पे क्या बाप का इजारा है</div><div class="misra right">कि उन के होते इसे हम मूँड नहीं सकते</div></div><div class="couplet"><div class="misra left">वही हैं कहते वहाँ दाल में है कुछ काला</div><div class="misra right">जो दाल घर में किसी के गला नहीं सकते</div></div><div class="couplet"><div class="misra left">कोई बता दे ये टीचर हैं या फटीचर हैं</div><div class="misra right">पढ़ाना दूर है पट्टी पढ़ा नहीं सकते</div></div><div class="couplet"><div class="misra left">जमा सकेंगे वो क्या ख़ाक रोब पब्लिक पर</div><div class="misra right">जो ख़ाकरोब पे सिक्का जमा नहीं सकते</div></div><div class="couplet"><div class="misra left">सड़क पे उन के लिए कोठड़ी सलामत है</div><div class="misra right">जो मारे ज़ोफ़ के कोठे पे जा नहीं सकते</div></div><div class="couplet"><div class="misra left">डिनर जो खाते हैं जूते के साथ टेबल पर</div><div class="misra right">वो जूता खोल के चोके में खा नहीं सकते</div></div><div class="couplet"><div class="misra left">सफ़ेद बाल तो होंगे सियाह पर हज़रत</div><div class="misra right">ख़िज़ाब से कहीं झुर्री मिटा नहीं सकते</div></div><div class="couplet"><div class="misra left">हैं अपने रंग में बे-ढब जी कहते ढब की बात</div><div class="misra right">ये बात बे-ढबी हरगिज़ सुना नहीं सकते</div></div></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

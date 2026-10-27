@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مَس ہے بغل میں اور بَبِیر بھی ہے جبار میں - کلامِ بیڈھب</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    const PAGES = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101];
+    function jumpToPage(inputElement) {
+      const val = parseInt(inputElement.value, 10);
+      if (PAGES.indexOf(val) !== -1) {
+        window.location.href = "page_" + String(val).padStart(3, "0") + ".html";
+      } else {
+        inputElement.value = 63;
+      }
+    }
+</script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_062.html">→ پچھلا</a>
+      <a class="nav-link" href="index.html">☰ فہرست</a>
+      <div class="page-jump-container">
+        <span>صفحہ</span>
+        <input
+          type="number"
+          class="page-input"
+          value="63"
+          min="2"
+          max="101"
+          title="صفحہ نمبر لکھ کر Enter دبائیں"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);"
+          onchange="jumpToPage(this);"
+        />
+        <span>/ ۱۰۱</span>
+      </div>
+      <a class="nav-link" href="page_064.html">اگلا ←</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">۵۹</div>
+        <div class="couplet-group"><div class="couplet"><div class="misra">مَس ہے بغل میں اور بَبِیر بھی ہے جبار میں</div><div class="misra">کیوں بار بار جائیں نہ ہم ایسے بار میں</div></div><div class="couplet"><div class="misra">شہری کا ہو گذر کیا ٹیڑھی بازار میں</div><div class="misra">دیہاتی جب کہ رہتے ہیں قرب وجوار میں</div></div><div class="couplet"><div class="misra">مچھر ہزاروں آئے تو کھٹمل بھی سینکڑوں</div><div class="misra">آئے مگر نہ آپؐ شب انتظار میں</div></div><div class="couplet"><div class="misra">عورت کی رائے لینا مُقدَّم سا ہو گیا</div><div class="misra">کرسی نشیں کو شہر کے ہر کاروبار میں</div></div><div class="couplet"><div class="misra">کوٹھے پہ ہیں رئیس تو کوٹھی پہ خانگی</div><div class="misra">جو بات ہے وہ ٹیڑھی ہے ٹیڑھی بازار میں</div></div><div class="couplet"><div class="misra">بی بی میاں سے کہہ کے یہ ڈولی پہ چڑھ گئی</div><div class="misra">جو بات ہے کہار میں وہ کب ہے کار میں</div></div><div class="couplet"><div class="misra">بابو پڑے ہیں اور ہے سیوا ٹہل میں دائی</div><div class="misra">پتھ میں ملے نہ کیوں انہیں بیگن بخار میں</div></div><div class="couplet"><div class="misra">پٹوکے میں جاتے بابو سے دائی نے کہہ دیا</div><div class="misra">آئے ہو جب کے چوک سے چُو کے ہو واری میں</div></div></div><hr class="divider"><div class="prose-block cols-1"><p>ع۱ گیا کا ایک محلہ جہاں کٹالی ہے ۔ جس کی سڑک کا نام اب شہید روڈ ہے، یہ جامع مسجد سے پچھم ہے اور اسی سے متصل گیا کا بد نام محلہ پوک ہے ۔ اس محلے میں کچھ رئیس بھی رہتے ۔</p></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

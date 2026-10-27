@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>मिसरा-ए-तरह : शमा से परवाना लिपटा और जल कर रह गया - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 45;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_044.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="45" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_046.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">४१</div>
+        <h2 class="section-heading" style="text-align: center;">मिसरा-ए-तरह : शमा से परवाना लिपटा और जल कर रह गया</h2><div class="couplet-group"><div class="couplet"><div class="misra left">बूढ़े का अरमान यूँ ही हाथ मल कर रह गया</div><div class="misra right">जब शबाब आया सनम का उस का ढल कर रह गया</div></div><div class="couplet"><div class="misra left">चाय पीते जब उन्हें देखा किसी मिस्टर के साथ</div><div class="misra right">चाय के पानी सा दिल मेरा उबल कर रह गया</div></div><div class="couplet"><div class="misra left">क्या करेगा शैख़ नौकर देख कर दाढ़ी तिरी</div><div class="misra right">हूरों का भी ख़ुल्द में जो दिल दहल कर रह गया</div></div><div class="couplet"><div class="misra left">देख कर उस शम्अ-रू की गर्मी-ए-हुस्न-ए-शबाब</div><div class="misra right">मोम की सूरत हमारा दिल पिघल कर रह गया</div></div><div class="couplet"><div class="misra left">मौक़ा पर ही एक मिस ने लत [किक] लगाया ऐसा मुझे</div><div class="misra right">गोल पर फ़ुटबाल सा यह दिल उछल कर रह गया</div></div><div class="couplet"><div class="misra left">जब से देखा वह उड़ी फिरती है इक शोफ़र के साथ</div><div class="misra right">दिल मिरा मोटर के पहिये से कुचल कर रह गया</div></div><div class="couplet"><div class="misra left">देख कर उस शोख़ के पहलू में हिटलरी सा दिल</div><div class="misra right">दर्द जब कुछ भी उठा सीना मसल कर रह गया</div></div><div class="couplet"><div class="misra left">मुफ़्लिसी में दाई, बाई कोई भी मिलती नहीं</div><div class="misra right">घर से मैं निकला तो सड़कों पर टहल कर रह गया</div></div><div class="couplet"><div class="misra left">अपनी माशूक़ा को देखा मैं ने घोड़े पर सवार</div><div class="misra right">दिल मिरा सीने में ऐ 'बेढब' उछल कर रह गया</div></div></div><hr class="divider">
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

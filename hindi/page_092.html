@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>जो छुप कर भागते हैं रात को जोरु के बिस्तर से - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 92;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_091.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="92" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_093.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">८८</div>
+        <div class="couplet-group"><div class="couplet"><div class="misra left">जो छुप कर भागते हैं रात को जोरु के बिस्तर से</div><div class="misra right">ख़बर लेती हैं उन की जोरु भी तड़के ही हंटर से</div></div><div class="couplet"><div class="misra left">करेंगे इश्क़-बाज़ी क्या भला वो माह-पैकर से</div><div class="misra right">निकलते जो नहीं कुत्तों के डर से रात को घर से</div></div><div class="couplet"><div class="misra left">अजब गाँधी जी दुनिया से अनोखे हैं निराले हैं</div><div class="misra right">लंगोटी बाँध कर मिल आते हैं अक्सर गवर्नर से</div></div><div class="couplet"><div class="misra left">अजब क्या है कि अगले साल हम भी कोई लीडर हों</div><div class="misra right">इसी उम्मीद में हम को भी है अब प्रेम खद्दर से</div></div><div class="couplet"><div class="misra left">हम अपनी जोरु जी से इस तरह कुछ ख़ौफ़ खाते हैं</div><div class="misra right">ज़माना जिस तरह थर थर काँपता रहता है हिटलर से</div></div><div class="couplet"><div class="misra left">उधर है काँग्रेस कहती, बनाओ मर्द नारी को</div><div class="misra right">उधर भगतिन ये कहती है कि नारी तुम बनो नर से</div></div></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

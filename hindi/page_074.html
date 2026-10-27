@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>मिसरअ-ए-तरह़: तुम्हारी दास्ताँ तक भी न होगी दास्तानों में - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 74;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_073.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="74" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_075.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">७०</div>
+        <h2 class="section-heading" style="text-align: center;">मिसरअ-ए-तरह़: तुम्हारी दास्ताँ तक भी न होगी दास्तानों में</h2><div class="couplet-group"><div class="couplet"><div class="misra left">यक़ीं होता मुझे कुछ है हुनर साइँसदानों में</div><div class="misra right">बुढ़ापे की मरम्मत को ली करता कारख़ानों में</div></div><div class="couplet"><div class="misra left">ये ऊनी बात है शायद पढ़े लिखे घरानों में</div><div class="misra right">कचहरी में मियाँ हैं और बी-बी हैं दुकानों में</div></div><div class="couplet"><div class="misra left">इसी से मूँछ दाढ़ी मिस ने अपनी साफ़ कर डाली</div><div class="misra right">रहे कुछ तफ़रक़ा बाक़ी न मर्दों और ज़नानों में</div></div><div class="couplet"><div class="misra left">नहीं मिलती हमें तो एक रुपये की रेज़गारी भी</div><div class="misra right">लुटाते हैं उधर वो नोट को दो-चार आनों में</div></div><div class="couplet"><div class="misra left">कहाँ वो महफ़िल-ए-रक़्स-ओ-सुरूर इस दौर में बेढब</div><div class="misra right">हुआ करती है अब बज़्म-ए-सुख़न भी शामियानों में</div></div></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

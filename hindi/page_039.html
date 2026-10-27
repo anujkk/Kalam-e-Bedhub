@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>मिसरा-ए-तरह : जिस को देखो इश्क़ का बीमार है - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 39;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_038.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="39" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_040.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">३५</div>
+        <h2 class="section-heading" style="text-align: center;">मिसरा-ए-तरह : जिस को देखो इश्क़ का बीमार है</h2><div class="couplet-group"><div class="couplet"><div class="misra left">मैं यहाँ माशूक़ गंगा पार है</div><div class="misra right">गंगा जी में कार भी बेकार है</div></div><div class="couplet"><div class="misra left">मैं यहाँ, माशूक़ सत्रह मील पर</div><div class="misra right">इश्क़ भी बेकार के बेकार है</div></div><div class="couplet"><div class="misra left">कोई दिन हो, आज-कल ता'तील में</div><div class="misra right">क्या कहूँ इतवार ही इतवार है</div></div><div class="couplet"><div class="misra left">पहने खाद्दर, लंगोटी बाँधिए</div><div class="misra right">मुफ़्त की गंडेरी दरकार है</div></div><div class="couplet"><div class="misra left">क्यों न हो उस का फ़लक पर अब दिमाग़</div><div class="misra right">कल जो रंडी थी वह अब स्टार है</div></div><div class="couplet"><div class="misra left">ऐसी मिस मुख़्तार को समझेगी क्या</div><div class="misra right">इश्क़-बाज़ी में जो ख़ुद-मुख़्तार है</div></div><div class="couplet"><div class="misra left">है यहाँ 'बेढब' को जब कुत्ते का डर</div><div class="misra right">उन से मिलना रात को दुश्वार है</div></div></div><hr class="divider">
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>मिसरा-ए-तरह : आख़िर किसी ने दिल को मिरे दिल बना दिया - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 54;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_053.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="54" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_055.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">५०</div>
+        <h2 class="section-heading" style="text-align: center;">मिसरा-ए-तरह : आख़िर किसी ने दिल को मिरे दिल बना दिया</h2><div class="couplet-group"><div class="couplet"><div class="misra left">उन की नज़र ने दिल में मिरे बिल बना दिया</div><div class="misra right">चूहों के रहने सहने के क़ाबिल बना दिया</div></div><div class="couplet"><div class="misra left">दुश्वार हो गया मुझे चलना भी एक क़दम</div><div class="misra right">मोटर ने, रेल ने, मुझे काहिल बना दिया</div></div><div class="couplet"><div class="misra left">उस काम के रहे न तो इस काम के रहे</div><div class="misra right">आनर्स की आरज़ू ने बुज़दिल बना दिया</div></div><div class="couplet"><div class="misra left">पढ़ना है इस ग़रज़ से कि मिल जाए कोई पोस्ट</div><div class="misra right">सर्विस की जुस्तजू ने तो बिस्मिल बना दिया</div></div><div class="couplet"><div class="misra left">चर्चा है हुस्न-ए-इश्क़ का सब की ज़बान पर</div><div class="misra right">दानिश-कदा को यारों ने महफ़िल बना दिया</div></div><div class="couplet"><div class="misra left">बस दौड़ना ही काम है जब से है वो सवार</div><div class="misra right">मुझ को जनाब-ए-इश्क़ ने साइकिल बना दिया</div></div><div class="couplet"><div class="misra left">बीमार-ए-ग़म के हलक़ में पहुँची नहीं दवा</div><div class="misra right">पहले ही डॉक्टर ने यहाँ बिल बना दिया</div></div><div class="couplet"><div class="misra left">मामूँ हो या कि ख़ालू हो, फूपा हो या चचा</div><div class="misra right">इंग्लिश ज़बाँ ने सब ही को अंकल बना दिया</div></div><div class="couplet"><div class="misra left">अल्लाह-रे-नाज़ इस मिस-ए-लंदन को क्या कहें</div><div class="misra right">थोड़ी सी छेड़-छाड़ ने डेविल बना दिया</div></div><div class="couplet"><div class="misra left">बे-ढब का दिल वो ले गए पहलू से ढब के साथ</div><div class="misra right">ऐसी भरी बहार में बे-दिल बना दिया</div></div></div><h2 class="section-heading" style="text-align: center;">मुशायरा बज़्म-ए-अदब पटना कॉलेज</h2>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

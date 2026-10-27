@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>फ़िक्र जिस को पड़ी हो टाइटिल की - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 43;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_042.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="43" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_044.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">३९</div>
+        <div class="couplet-group"><div class="couplet"><div class="misra left">फ़िक्र जिस को पड़ी हो टाइटिल की</div><div class="misra right">क्यों न हालत हो उस की बुज़दिल की</div></div><div class="couplet"><div class="misra left">जब हों साले मुआमला पर वार</div><div class="misra right">क्यों न फिर-फेर हो मुवक्किल की</div></div><div class="couplet"><div class="misra left">शेख़ जी हैं बड़े फ़रिश्ता-सिफ़ात</div><div class="misra right">क्यों न उल्फ़त हो उन की इंजील की</div></div><div class="couplet"><div class="misra left">वह चाचा के भी अब चाचा निकले</div><div class="misra right">कट गई नाक टॉम अंकल की</div></div><div class="couplet"><div class="misra left">प्रेम सागर में डूबी है पत्नी</div><div class="misra right">है रहबर जी को सूझी पिंगल की</div></div><div class="couplet"><div class="misra left">शे'र की बज़्म में मुझे 'बेढब'</div><div class="misra right">दिल-लगी ही समझे महफ़िल की</div></div></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

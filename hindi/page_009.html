@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>शराब-ए-नाब की यह आज कल गिरानी है - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 9;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_008.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="9" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_010.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">७</div>
+        <div class="couplet-group"><div class="couplet"><div class="misra left">शराब-ए-नाब की यह आज कल गिरानी है</div><div class="misra right">कि एक हिस्सा है मय तीन हिस्सा पानी है</div></div><div class="couplet"><div class="misra left">बूढ़ी चढ़ी न रहे क्यों शराब से ताड़ी</div><div class="misra right">वह शय ज़मीन की है और यह आसमानी है</div></div><div class="couplet"><div class="misra left">मय-ए-सुख़न से जो मज़मून सब लिखे सरशार</div><div class="misra right">जनाब-ए-पीर-ए-मुग़ाँ की यह मेहरबानी है</div></div><div class="couplet"><div class="misra left">पकड़ के शैख़-ओ-बरहमन को भेज दो उस पार¹</div><div class="misra right">इन्हीं के दम से तो भारत में खींचातनी है</div></div><div class="couplet"><div class="misra left">नेफ़ाक़-ओ-बुग़्ज़ को चूल्हे में झोंक दो मिल कर</div><div class="misra right">स्वदेशी राज की खिचड़ी अगर पकानी है</div></div></div><hr class="divider"><div class="couplet-group"><div class="couplet"><div class="misra left">इस वास्ते उस से न उतारी गई मिन्नत</div><div class="misra right">चढ़वाने को पाठा कोई सावन में नहीं था</div></div><div class="couplet"><div class="misra left">कमरे में हसीना के रही यारों की भरमार</div><div class="misra right">बुढ़िया के लिए कोई भी आँगन में नहीं था</div></div><div class="couplet"><div class="misra left">फ़ैशन का मैं ताना कभी सुनता नहीं मिस से</div><div class="misra right">अफ़सोस जवानी में मैं लंदन में नहीं था</div></div></div><div class="prose-block cols-1"><p>इन्हें पढ़ने के बाद मेरे दिल में यह शौक़ पैदा हुआ कि दादा जी का कलाम जमा करूँ। कई बरसों की मुसलसल जद्द-ओ-जहद के बाद मैं ने अपने बड़े चाचा डाक्टर शिवनन्दन प्रसाद की मदद से उनके कुछ कलाम को जमा किया जिसे पेश करने की सआदत हासिल कर रहा हूँ। इस काम में मुझे डाक्टर निज़ामुद्दीन साहब और मुहीउद्दीन फ़रीदी साहब ने काफ़ी मदद फ़रमाई है। मैं उनका मशकूर हूँ। मैं अपने दो बुज़ुर्गों डाक्टर एस. एम. हसनैन (हेड ऑफ़ दी डिपार्टमेंट ऑफ़ उर्दू मगध यूनिवर्सिटी बोधगया) और मौलाना हकीम सैयद मोहम्मद यूसुफ़ साहब इमाम व ख़तीब जामे मस्जिद गया का तहे दिल से शुक्रगुज़ार और एहसान-मंद हूँ कि उनकी सरपरस्ती और तरबियत ने इस मजमुए को इस मंज़िल तक पहुँचाने में मेरी पूरी-पूरी मदद फ़रमाई है। वरना इस इल्मी ख़िदमत का मुझसे अंजाम पाना नामुमकिन था।</p><p>दादा जी की सवानेह-ए-हयात लिखने में मेरे वालिद बाबू जदुनन्दन प्रसाद एडवोकेट ने काफ़ी मदद फ़रमाई है और यह हक़ीक़त है कि उनकी शफ़क़त, रहनुमाई और दुआओं से</p></div>
+      </div>
+      
+        <footer class="footnotes-container">
+          <hr class="footnote-divider">
+          <div class="footnote-item"><span class="fn-marker">१</span> <span class="fn-text">गंगा के पार, मगध के रहने वाले गंगा के उत्तर वालों को "उस पार" वाले कहते हैं। (रवी)</span></div>
+        </footer>
+        
+    </article>
+    
+  </main>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>मिसरअ-ए-तरह़: मय उड़ी जाती है साक़ी तेरे पैमाने से - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 75;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_074.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="75" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_076.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">७१</div>
+        <h2 class="section-heading" style="text-align: center;">मिसरअ-ए-तरह़: मय उड़ी जाती है साक़ी तेरे पैमाने से</h2><div class="couplet-group"><div class="couplet"><div class="misra left">शैख़ पकड़े गए आते हुए मयख़ाने से</div><div class="misra right">पारसाई न बढ़ी दाढ़ी के बढ़ जाने से</div></div><div class="couplet"><div class="misra left">फिर के आ जाए जवानी तो ज़ईफ़ी की क़सम</div><div class="misra right">मैं भी बाज़ आऊँ नहीं मूँछ के मुँडवाने से</div></div><div class="couplet"><div class="misra left">जिस घड़े घूँट को लबनी का पड़ा हो चसका</div><div class="misra right">काम उस का नहीं चल सकता है पैमाने से</div></div><div class="couplet"><div class="misra left">चुल्लू भर पानी ही काफ़ी था हया-दारों को</div><div class="misra right">फ़ायदा जान-ब-जा क्या हौज़ के खुदवाने से</div></div><div class="couplet"><div class="misra left">जब से बमबारी ब्लैक आउट का एलान हुआ</div><div class="misra right">वो निकलते ही नहीं दिल के सियह-ख़ाने से</div></div><div class="couplet"><div class="misra left">अपने ढब में जो सुना देता है खट्टा-मीठा</div><div class="misra right">ऐसे बेढब को है क्या फ़ायदा बुलवाने से</div></div></div><hr class="divider"><div class="prose-block cols-1"><p>मुशायरा बर-मकान बाबू शत्रुघ्न प्रसाद उर्फ़ लल्लन जी, आरा</p><p>बतारीख़ २७ मार्च १९४३ई., चौथा और पाँचवाँ शेअर बाद का इज़ाफ़ा है।</p></div><hr class="divider">
+      </div>
+      
+        <footer class="footnotes-container">
+          <hr class="footnote-divider">
+          <div class="footnote-item"><span class="fn-marker">१</span> <span class="fn-text">ये उस वक़्त का ज़िक्र है जब दूसरी आलमी जंग छिड़ने वाली थी उसी वक़्त तमाम शहर में एहतियाती तौर पर हौज़ खुदवाए गए थे।</span></div>
+        </footer>
+        
+    </article>
+    
+  </main>
+</body>
+</html>

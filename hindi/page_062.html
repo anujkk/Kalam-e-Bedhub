@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>मिसरअ-ए-तरह़: बू मोतिये की आई है फूलों के हार से - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 62;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_061.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="62" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_063.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">५८</div>
+        <h2 class="section-heading" style="text-align: center;">मिसरअ-ए-तरह़: बू मोतिये की आई है फूलों के हार से</h2><div class="couplet-group"><div class="couplet"><div class="misra left">जब पास आ के मिस को नई बीर दे जार से</div><div class="misra right">परहेज़ दूर क्यों न हो परहेज़गार से</div></div><div class="couplet"><div class="misra left">बोली सफ़र के वक़्त ये बी-बी पते की बात</div><div class="misra right">है लुत्फ़ कार में नहीं बढ़ कर कहार से</div></div><div class="couplet"><div class="misra left">क्यों हो न लुत्फ़ जब है बराबर का जोड़-तोड़</div><div class="misra right">दाई से ख़ुश हैं बाबू तो बी-बी कहार से</div></div><div class="couplet"><div class="misra left">हँस के जो मोती जान ने माला हमें दिया</div><div class="misra right">बू मोतिये की आई है फूलों के हार से</div></div><div class="couplet"><div class="misra left">सुनते हैं दिल से बस वही बेढब तेरा कलाम</div><div class="misra right">रखते हैं दिल में शौक़ जो चटनी अचार से</div></div></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

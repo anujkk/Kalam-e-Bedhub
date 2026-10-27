@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>जिन अशआर के बारे में कोई ख़ास बात मुझे मालूम ... - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 13;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_012.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="13" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_014.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">११</div>
+        <div class="couplet single"><div class="misra left">चुपके माँगो तो कोई दे भी दे</div><div class="misra right">करते क्यों हो गुहार होली में</div></div><div class="prose-block cols-1"><p>जिन अशआर के बारे में कोई ख़ास बात मुझे मालूम हो सकी उसका तज़किरा मैंने कर दिया। लेकिन जिन के बारे में कुछ मालूम न हो सका उसका बताना मेरे लिए बहुत मुश्किल है। दादा जी शेर कहते थे फ़क़त लोगों को हँसाने के लिए, उन्हें रंज-ओ-ग़म से नजात दिलाने के लिए। उन्हें शोहरत की ख़्वाहिश नहीं थी इसलिए परचे और रिसाले में उनके कलाम बहुत कम मिलते हैं। अहबाब ने लेकर कभी छाप दिया तो छाप दिया। इसलिए उनका मतबूआ कलाम बहुत कम मिलता है। हाँ वह मुशायरों की रौनक़ रहा करते थे, और वहीं अपनी जौलानी-ए-तबा दिखाते थे, इसलिए उनके मजमुआ-ए-कलाम पर तफ़्सीली गुफ़्तगू बहुत मुश्किल है।</p><p>दादा जी ने दाई, बाई, बीवी, शैख़, बरहमन वग़ैरा के ज़रिया जो कुछ भी कहा है वह फ़क़त समाज और वक़्त के माहौल पर तंज़ है। मैं उनकी शायरी पर क्या रोशनी डालूँगा, यह काम तो फ़न के जानने वालों का है। बहरहाल जितने अशआर मुझे मिल सके वह जैसे भी हैं मैं हर तबक़ा के शौक़ीन-मिज़ाज लोगों की ख़िदमत में पेश कर रहा हूँ, साथ ही साथ कुछ तरमीम के साथ उन्हीं के एक शे'र से दादा जी की आत्मा पर अक़ीदत के फूल चढ़ाता हूँ :—</p></div><div class="couplet-group"><div class="couplet"><div class="misra left">आप की तारीफ़ 'बेढब' क्या करूँ बन्दा-नवाज़</div><div class="misra right">है ज़ईफ़ी पर जवानी का है दिल में सोज़-ओ-साज़</div></div><div class="couplet"><div class="misra left">आप तो गरचे रहे हर वक़्त साधू देवता</div><div class="misra right">ख़ुश-मिज़ाजी, आप का फ़न, ख़ुश-बयानी दिलरुबा</div></div><div class="couplet"><div class="misra left">हर क्लब में आप के औसाफ़ का चरचा रहा</div><div class="misra right">आप की मुट्ठी में था गोया कि दिल अहबाब का</div></div></div><div class="prose-block cols-1"><p>इस मजमुए की इशाअत में पूरी तरह तवज्जोह न दी जा सकी है इसलिए क़ारिईन-ए-किराम मेरी ग़लतियों और कोताहियों को मुआफ़ करेंगे और अपने मुफ़़ीद मशवरे से आगाह करेंगे मैं आप लोगों का मशकूर हूँगा।</p><p>इस मुख़्तसर इल्तिमास के बाद मुनासिब है कि दादा जी की ज़िंदगी और मुख़्तसर सवानेह-ए-हयात...</p></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

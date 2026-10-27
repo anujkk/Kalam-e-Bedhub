@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>मिसरा-ए-तरह : हमेशा याद आती है हमें तक़रीर तुलसी की - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 58;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_057.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="58" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_059.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">५४</div>
+        <h2 class="section-heading" style="text-align: center;">मिसरा-ए-तरह : हमेशा याद आती है हमें तक़रीर तुलसी की</h2><div class="couplet-group"><div class="couplet"><div class="misra left">ज़माने में हो क्योंकर दोस्तो तौक़ीर तुलसी की</div><div class="misra right">कि जब कोट और पेंट ने निकाली है जब तस्वीर तुलसी की</div></div><div class="couplet"><div class="misra left">जो मिल्टन, टेनीसन, बायरन के हैं पीछे पड़े रहते</div><div class="misra right">समझ में ख़ाक आएगी उन्हें तक़रीर तुलसी की</div></div><div class="couplet"><div class="misra left">नहीं कुछ हज्व ज़ाहिद की, न साक़ी की हैं तारीफ़ें</div><div class="misra right">तो हम फिर बे-मज़ा समझें न क्यों तहरीर तुलसी की</div></div><div class="couplet"><div class="misra left">जो की तारीफ़ तुलसी की किसी पंडित ने मिस्टर से</div><div class="misra right">तो बोले शायरी क्या है फ़क़त जागीर तुलसी की</div></div><div class="couplet"><div class="misra left">हमें भाता है ताज़ा चॉप, कटलेट, सूप वारेन का</div><div class="misra right">मुबारक पंडितों ही को हो बासी खीर तुलसी की</div></div><div class="couplet"><div class="misra left">जो पूजा-पाठ से भागें उन्हें पहनाओ तुम कंठी</div><div class="misra right">बगेड़ों के लिए लाज़िम है ये ज़ंजीर तुलसी की</div></div><div class="couplet"><div class="misra left">जो चौपाई न समझे, समझो चौपाया उसे बे-ढब</div><div class="misra right">कि इस में दोष है उस का न कर तक़्सीर तुलसी की</div></div></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

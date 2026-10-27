@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ऐसी बदली है रविश उठ गया पूजा होना - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 91;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_090.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="91" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_092.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">८७</div>
+        <div class="couplet-group"><div class="couplet"><div class="misra left">ऐसी बदली है रविश उठ गया पूजा होना</div><div class="misra right">रह गया चर्च में भी पेट का चर्चा होना</div></div><div class="couplet"><div class="misra left">शादी की जब से है बुड्ढे ने जवाँ बी-बी से</div><div class="misra right">भीड़ से घर में है इक ह़श्र का बरपा होना</div></div><div class="couplet"><div class="misra left">जब तलक सर पे रहेगा कोई शैतान सवार</div><div class="misra right">हिंदू-मुस्लिम का न होगा कभी यकता होना</div></div><div class="couplet"><div class="misra left">देख कर मुझ को हो क्यों आग-बगूला होते</div><div class="misra right">माहरू के लिए दिल चाहिए ठंडा होना</div></div><div class="couplet"><div class="misra left">सुनते आए हैं मोहब्बत का सिला अच्छा है</div><div class="misra right">इश्क़ में मुझ को मिला सूख के काँटा होना</div></div><div class="couplet"><div class="misra left">खाना-दाना भी मिले, मुफ़्त में बी-बी भी मिले</div><div class="misra right">इंडिया के हो मुक़द्दर में जो रशिया होना</div></div><div class="couplet"><div class="misra left">करते बेढब से हो क्यों बात मटन-चाप की दोस्त</div><div class="misra right">सिर्फ़ बैंगन का मुझे चाहिए भुरता होना</div></div></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

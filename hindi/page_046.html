@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>मिसरा-ए-तरह : हक़ तो यह है कि हक़ अदा न हुआ - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 46;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_045.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="46" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_047.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">४२</div>
+        <h2 class="section-heading" style="text-align: center;">मिसरा-ए-तरह : हक़ तो यह है कि हक़ अदा न हुआ</h2><div class="couplet-group"><div class="couplet"><div class="misra left">जम के आई घटा तो क्या इस से</div><div class="misra right">जब हसीनों का जमघट न हुआ</div></div><div class="couplet"><div class="misra left">थी जवानी तो होता था सब कुछ</div><div class="misra right">अब यह है कुछ हुआ, हुआ न हुआ</div></div><div class="couplet"><div class="misra left">गर्ल मिलती, गैब्रिएल भी मिलता</div><div class="misra right">हाए यूरप यह इंडिया न हुआ</div></div><div class="couplet"><div class="misra left">बीवी और बाई जी के झगड़े का</div><div class="misra right">मुंसिफ़ों से भी फ़ैसला न हुआ</div></div><div class="couplet"><div class="misra left">मिस बिगड़ कर यह बोली नौकर से</div><div class="misra right">मैं जो आई तो तू क्यों खड़ा न हुआ</div></div><div class="couplet"><div class="misra left">नर्स बीमार को करेगी खड़ा</div><div class="misra right">डॉक्टर से अगर खड़ा न हुआ</div></div><div class="couplet"><div class="misra left">मुझ को घर बैठे मिलती पाँचों मिस</div><div class="misra right">हाए पेरिस मिरा गया न हुआ</div></div><div class="couplet"><div class="misra left">जाने क्या भीक माँगने का लुत्फ़</div><div class="misra right">जो इलेक्शन में मुब्तला न हुआ</div></div><div class="couplet"><div class="misra left">उन से भिड़ जाता वह खुले मैदाँ</div><div class="misra right">हाए 'बेढब' अखाड़ा न हुआ</div></div></div><hr class="divider">
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

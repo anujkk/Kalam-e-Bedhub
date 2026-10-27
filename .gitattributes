@@ -1,0 +1,18 @@
+# Default behavior: normalize all text files to LF in the repository
+* text=auto eol=lf
+
+# Explicitly ensure web source files always use LF
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+
+# Denote binary files so Git never touches their bytes
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.gif binary
+*.ico binary
+*.pdf binary

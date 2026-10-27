@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>रुबाइयात - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 97;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_096.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="97" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_098.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">९३</div>
+        <h2 class="section-heading" style="text-align: center;">रुबाइयात</h2><div class="stanza"><div class="stanza-line">यों तो मैं चुप भी रह नहीं सकता</div><div class="stanza-line">पर जो कहना है कह नहीं सकता</div><div class="stanza-line">थाने की पुलिस की आदत है</div><div class="stanza-line">ज़ुल्म बेढब ये सह नहीं सकता</div></div><hr class="divider"><div class="prose-block cols-1"><p>मुशायरा ब-मक़ाम एच. डी. जैन कॉलेज आरा बतारीख़ २८ मार्च १९४४ई.</p></div><div class="stanza"><div class="stanza-line">आसमाँ से ज़मीं नहीं मिलती</div><div class="stanza-line">"हाँ" से हरगिज़ "नहीं" नहीं मिलती</div><div class="stanza-line">ढूँढने से ख़ुदा भी मिलता है</div><div class="stanza-line">रेज़गारी पर कहीं नहीं मिलती</div></div><hr class="divider">
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>समस्या - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 37;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_036.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="37" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_038.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">३३</div>
+        <h2 class="section-heading" style="text-align: center;">समस्या</h2><div class="couplet-group"><div class="couplet"><div class="misra left">जो नया जूता यहाँ लाएगा आज</div><div class="misra right">वापसी में ख़ूब पछताएगा आज</div></div><div class="couplet"><div class="misra left">भीड़ लम्बी फ़र्श इतना मुख़्तसर</div><div class="misra right">यह तमाशा रंग कुछ लाएगा आज</div></div><div class="couplet"><div class="misra left">खो के जूता कोई जूता खाएगा</div><div class="misra right">कोई जूता मुफ़्त का पाएगा आज</div></div><div class="couplet"><div class="misra left">खोल कर जूता जो बैठा फ़र्श पर</div><div class="misra right">उस का जूता चाल दिखलाएगा आज</div></div><div class="couplet"><div class="misra left">वह तो ख़ुद बैठा रहेगा बज़्म में</div><div class="misra right">ख़ुद-ब-ख़ुद जूता चला जाएगा आज</div></div><div class="couplet"><div class="misra left">जो पढ़ेगा शे'र जूता खोल कर</div><div class="misra right">शे'र पढ़ने की जज़ा पाएगा आज</div></div><div class="couplet"><div class="misra left">जल्द सर पर पैर रख कर भागिए</div><div class="misra right">वरना जूता हाथ से जाएगा आज</div></div><div class="couplet"><div class="misra left">छोड़िए 'बेढब' जी बस अपना कलाम</div><div class="misra right">वरना बेढब ही मज़ा आएगा आज</div></div></div><hr class="divider"><h2 class="section-heading" style="text-align: center;">रिसाला "आज" में शाए' हो चुका है</h2>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

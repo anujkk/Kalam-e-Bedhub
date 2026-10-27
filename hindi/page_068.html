@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>हाथ जब से आ गई है एक मुक़व्वी पिल मुझे - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 68;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_067.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="68" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_069.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">६४</div>
+        <div class="couplet-group"><div class="couplet"><div class="misra left">हाथ जब से आ गई है एक मुक़व्वी पिल मुझे</div><div class="misra right">मेरा राइवल भी समझने लग गया क़ाबिल मुझे</div></div><div class="couplet"><div class="misra left">मैं समझ सकता नहीं कि कौन से औसाफ़ पर</div><div class="misra right">औरतों को बुलबुल वो कहते हैं मगर जाहिल मुझे</div></div><div class="couplet"><div class="misra left">था जो उस मिस को मुझे नीचा दिखाने का ख़याल</div><div class="misra right">ख़ुद चढ़ी मोंढे के ऊपर और दी साईकल मुझे</div></div><div class="couplet"><div class="misra left">बन के साली जो मिरे घर आई बीबी बन गई</div><div class="misra right">इश्क़-बाज़ी में अजब एजाज़ है हासिल मुझे</div></div><div class="couplet"><div class="misra left">लड़कियों को मैं जो कर लेता हूँ अपनी राय में</div><div class="misra right">राय साहब का दिया है यारों ने टाइटल मुझे</div></div><div class="couplet"><div class="misra left">हो के मल्लाहिन का आशिक़ सोचता रहता हूँ मैं</div><div class="misra right">डूब कर मँझधार में शायद मिले साहिल मुझे</div></div><div class="couplet"><div class="misra left">पास उस के टैंक भी है और बम-गोला भी है</div><div class="misra right">डर है हिटलर सा उड़ा डाले न वो क़ातिल मुझे</div></div><div class="couplet"><div class="misra left">पांडे जी कहते हैं पड़ियान के कैसे पाँव पार</div><div class="misra right">मैं इसे पट्टी पढ़ाता हूँ तो वो पिंगल मुझे</div></div><div class="couplet"><div class="misra left">कहते सिंगल को डबल कर डाल उन की शान ने</div><div class="misra right">मेरी क़िस्मत ने डबल से कर दिया सिंगल मुझे</div></div><div class="couplet"><div class="misra left">जब गया तफ़रीह की ख़ातिर किसी पासिन के पास</div><div class="misra right">उस ने दो पल में बेढब कर दिया गिलपिल मुझे</div></div></div><hr class="divider"><div class="prose-block cols-1"><p>मत्बूआ उषा मैगज़ीन, २७ फ़रवरी १९४४ई.</p></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

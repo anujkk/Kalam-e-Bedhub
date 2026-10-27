@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ताअस्सुरात - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 23;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_022.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="23" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_024.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">१९</div>
+        <h2 class="section-heading" style="text-align: center;">ताअस्सुरात</h2><h2 class="section-heading" style="text-align: center;">डॉक्टर सैयद मोहम्मद हसनैन</h2><div class="prose-block cols-1"><p>हँसना ज़िंदगी की दलील है और सेहतमंद ज़िंदगी की अलामत भी। रोज़-ओ-शब किसी हाल में गुज़रे, हँसने और बे-इख़्तियार हँसने में न कोई चूकता है और न कोई रोकता है। इस फ़ेल से क़ुदरत ने हर को नवाज़ा है। इसके इज़हार और इबलाग़ में उम्र और इल्म की कोई क़ैद नहीं। मगर, हँसने में समझ और सलीक़ा हर को नसीब नहीं। इसमें मिज़ाज और मौक़ा का दख़ल होता है। यही वजह है कि ज़िंदगी की हँसी और अदब की हँसी में फ़र्क़ हो जाता है। एक हँसी बेवक़्त होती है और ज़रूरत से ज़ियादा। यह हँसने वाले और हज़ उठाने वाले की उस हिस्स-ए-लतीफ़ या लुत्फ़-ए-बलाग़त की दलालत नहीं करती जो उस की फ़िक्र-ओ-फ़हम से ताल्लुक़ रखती है। दूसरे अल्फ़ाज़ में यूँ समझिए कि इस क़िस्म की हँसी में नफ़ासत व शास्तगी नहीं होती है। यह ना-पुख़्ता ज़ेहन की पैदावार होती है, आमियाना और सतही।</p><p>हँसी में आदाब-ए-एहतियात ही उसे आम सतह से बाला बनाते हैं। यह हँसी बे-हंगम और वक़्ती नहीं होती। यह अदब, कल्चर और तहज़ीब का मज़हर होती है। यह महज़ हँसने वाले का ज़ाती अमल नहीं रहती। यह इज्तमाई बन जाती है और जल्द फ़ना नहीं होती।</p><p>आप जानते हैं हँसना आसान है, दूसरों पे हँसना ज़ियादा आसान है लेकिन अपने आप पे हँसना बहुत मुश्किल है। इस पर क़ुदरत हर के बस की बात नहीं। इसकी तख़्लीक़ और हुसूल में फ़रासत और अच्छी तीनत के अलावा दरूँ-बीनी लाज़मी है। यह दरूँ-बीनी मुशाहिदे से हासिल होती है और फ़िक्र से तवाना रहती है। यही वह ख़ुसूसियात हैं जो 'आला ज़राफ़त' तख़्लीक़ करती हैं। यह ऐसी ज़राफ़त होती है जिससे दूसरों की आँख के शहतीर के साथ अपनी आँख का तिनका भी नज़र आ जाता है। यह ज़राफ़त आम हँसी नहीं होती। यह हिज्व और तंज़ की सूरत इख़्तियार कर लेती है और वक़्ती नहीं, दायम हो जाती है।</p></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

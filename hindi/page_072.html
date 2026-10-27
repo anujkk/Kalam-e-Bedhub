@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>किसी के वास्ते ये तीर होती हो तो होती हो - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 72;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_071.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="72" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_073.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">६८</div>
+        <div class="couplet-group"><div class="couplet"><div class="misra left">किसी के वास्ते ये तीर होती हो तो होती हो</div><div class="misra right">मगर तेरी नज़र मेरे लिए शहतीर होती है</div></div><div class="couplet"><div class="misra left">मँझधार
+वो कहते हैं मेरी डेंगी को बहर-ए-इश्क़ में खेओ</div><div class="misra right">नज़र में उन के जब कश्मीर की तस्वीर होती है</div></div><div class="couplet"><div class="misra left">किराया जब तलब करता हूँ तो कहते हैं वो हँस कर</div><div class="misra right">ये दिल की झोपड़ी माशूक़ की जागीर होती है</div></div><div class="couplet"><div class="misra left">न क्यों ख़ुश-ज़ायक़ा हों उस की कड़वी कड़वी बातें भी</div><div class="misra right">कि उस के होंट में एक लज़्ज़त-ए-अंजीर होती है</div></div><div class="couplet"><div class="misra left">मैं जब घर से निकलना चाहता हूँ रात को बेढब</div><div class="misra right">तो घर वाली की ख़फ़गी आ के दामन-गीर होती है</div></div></div><hr class="divider"><div class="prose-block cols-1"><p>मुशायरा ब-मक़ाम औरंगाबाद</p><p>मोरख़ा ७ मार्च १९४४ई.</p></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

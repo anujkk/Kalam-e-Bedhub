@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>है अगर शाइर तो उन की आँख में भी तीर देख - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 79;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_078.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="79" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_080.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">७५</div>
+        <div class="couplet-group"><div class="couplet"><div class="misra left">है अगर शाइर तो उन की आँख में भी तीर देख</div><div class="misra right">और अबरू में मुनासिब है कोई शमशीर देख</div></div><div class="couplet"><div class="misra left">शोख़ियाँ अपनी जवानी की बुत-ए-बे-पीर देख</div><div class="misra right">बाद को मेरी शरारत या मेरी तक़सीर देख</div></div><div class="couplet"><div class="misra left">पूछ लेना क्यों हँसा मैं आ के मुझ से बाद में</div><div class="misra right">जा के पहले आईने में अपनी ख़ुद तस्वीर देख</div></div><div class="couplet"><div class="misra left">क्या पते की बात हम से नाइका ने ये कही</div><div class="misra right">क्या मज़ा देती है चख के कुछ तो बासी खीर देख</div></div><div class="couplet"><div class="misra left">भाई मजनूँ का लक़ब देने से मुझ को पेशतर</div><div class="misra right">आईने में शक्ल ख़ुद लैला की ऐ हमशीर देख</div></div><div class="couplet"><div class="misra left">मिस की कड़वी मीठी बातों में मज़ा क्योंकर न हो</div><div class="misra right">उस के होंटों ही में जब कि लज़्ज़त-ए-अंजीर देख</div></div><div class="couplet"><div class="misra left">अब ज़ईफ़ी और सर्दी में न कुछ होने को है</div><div class="misra right">छोड़ कर बेढब को तू भी ऐ बुत-ए-बे-पीर देख</div></div></div><hr class="divider"><div class="prose-block cols-1"><p>मुशायरा ब-मक़ाम नालंदा कॉलेज बिहार</p><p>बतारीख़ १८ नवंबर १९४३ई.</p></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

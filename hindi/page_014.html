@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>पैदाइश - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 14;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_013.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="14" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_015.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">१२</div>
+        <h2 class="section-heading" style="text-align: center;">पैदाइश</h2><div class="prose-block cols-1"><p>दादा जी की पैदाइश १८८५ ई. में अमावाँ ज़िला पटना के मशहूर कायस्थ ख़ानदान में हुई। नाम बृज किशोर नारायण रखा गया। उनके वालिद श्री माधो लाल जी का इंतिक़ाल उनके अय्याम-ए-तिफ़्ली ही में हो गया था। इसलिए वह और उनके बड़े भाई श्री राम किशोर नारायण अपनी माँ को लेकर अपने चचेरे भाई बिख नारायण जी जो अमावाँ स्टेट के ख़ास कारिन्दा और श्री बंसी लाल के साहबज़ादे थे, के साथ मोहल्ला पंचायती अखाड़ा गया में रहने लगे। कुछ ही दिन साथ रहते हुए गुज़रे थे कि उनके चाचा श्री लखन नारायण लाल जी का इंतिक़ाल प्लेग की वजह से हो गया। बाबू बिख नारायण के छोटे भाई श्री गौरी परशाद की ख़्वाहिश हुई कि अपने बड़े भाई की आख़िरी रसूमात अपने गाँव अमावाँ जाकर अदा करें। इसलिए वह घर के सभी लोगों को लेकर अमावाँ पहुँचे। बरसात का मौसम था वहाँ जाने के लिए नूनियाँ नदी पार करनी पड़ती थी। श्री गौरी परशाद ने अमावाँ स्टेट के राजा साहब श्री हरी हर परशाद को एक आदमी के मारफ़त नाव भेज देने के लिए ख़बर भेजी ताकि अपने बड़े भाई की आख़िरी रस्म अपने गाँव में अदा कर सकें। राजा साहब ने क़ासिद के मारफ़त ख़बर भेजी कि वह आख़िरी रसूमात गया ही में अंजाम दे कर आएँ। राजा साहब ने गाँव तक पहुँचने के लिए कोई नाव तक नहीं भेजी। श्री गौरी परशाद को इस तरह का बर्ताव अच्छा नहीं लगा। वह अपने आबाई वतन अमावाँ को इंतिहाई मोहब्बत के बावजूद छोड़ने पर मजबूर हो गए, फिर अमावाँ कभी नहीं गए रास्ते ही से गया वापस लौट आए और वहीं अपने बड़े भाई की आख़िरी रसूमात को पूरा किया।</p><p>ख़ानदानी सिलसिला (कुरसी नामा) | श्री बृज किशोर नारायण (बेढब गयावी) के वालिद चार भाई थे। उनके ख़ानदान का सिलसिला मंदरजा ज़ैल कुरसी नामा से साफ़ ज़ाहिर होता है :</p></div><div class="prose-block cols-1"><p>मोती लाल</p><p>भूप नारायण लाल</p><p>(१) दरगा लाल | (२) बंसी लाल | (३) माधो लाल | (४) लखन लाल</p></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

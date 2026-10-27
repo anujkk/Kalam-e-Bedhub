@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>मिसरा-ए-तरह : आए न आप हिज्र की शब में तो क्या हुआ - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 51;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_050.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="51" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_052.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">४७</div>
+        <h2 class="section-heading" style="text-align: center;">मिसरा-ए-तरह : आए न आप हिज्र की शब में तो क्या हुआ</h2><div class="couplet-group"><div class="couplet"><div class="misra left">शायद उमंड बाई जी का बाई ला हुआ</div><div class="misra right">आबाद फिर से घोंसला जो चौक का हुआ</div></div><div class="couplet"><div class="misra left">किस मुँह से किस मिले गा किसी मिस का शैख़ को</div><div class="misra right">दाढ़ी बढ़ी हुई है तो माथा घुटा हुआ</div></div><div class="couplet"><div class="misra left">था क़ब्ज़ सहल आई तो हलका हुआ मिज़ाज</div><div class="misra right">बैत-उल-ख़ला मरे लिए बैत-उश-शिफ़ा हुआ</div></div><div class="couplet"><div class="misra left">मर्दों का रंग-ओ-रूप तो औरत का छाव-भाव</div><div class="misra right">मैं कीर्तन में जा के तो बहरूपिया हुआ</div></div><div class="couplet"><div class="misra left">क्यों मनचले न टूट पड़ें सब उसी तरफ़</div><div class="misra right">रम्ना ही आज-कल है परिस्तान बना हुआ</div></div><div class="couplet"><div class="misra left">फुलवारी चौक की न रही अब हरी-भरी</div><div class="misra right">अब तो गया, गया न रहा, है गया हुआ</div></div><div class="couplet"><div class="misra left">कहती है चौक के वाली कि जाते हो चौक क्यों?</div><div class="misra right">जब ख़ुद ही गोल बाग़ है फूला-फला हुआ</div></div></div>
+      </div>
+      
+        <footer class="footnotes-container">
+          <hr class="footnote-divider">
+          <div class="footnote-item"><span class="fn-marker">१</span> <span class="fn-text">रांग्गड़ों का एक महल्ला</span></div>
+        </footer>
+        
+    </article>
+    
+  </main>
+</body>
+</html>

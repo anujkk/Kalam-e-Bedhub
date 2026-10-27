@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>मिसरा-ए-तरह : आह जो निकलेगी दिल से वह दुआ हो जाएगी - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 42;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_041.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="42" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_043.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">३८</div>
+        <h2 class="section-heading" style="text-align: center;">मिसरा-ए-तरह : आह जो निकलेगी दिल से वह दुआ हो जाएगी</h2><div class="couplet-group"><div class="couplet"><div class="misra left">जिस घड़ी फ़ैशन की धुन हद से सिवा हो जाएगी</div><div class="misra right">मूँछ दाढ़ी के लिए ख़ासी बला हो जाएगी</div></div><div class="couplet"><div class="misra left">हर रक़म तहरीर-ए-पेशी की हवा हो जाएगी</div><div class="misra right">क्या धरेंगे जब अदालत पारसा हो जाएगी</div></div><div class="couplet"><div class="misra left">हर घड़ी हर वक़्त मोती पर न रक्खो तुम नज़र</div><div class="misra right">वरना आँखों में तुम्हारी मोतिया हो जाएगी</div></div><div class="couplet"><div class="misra left">देवियाँ फ़ैशन के पीछे जब बनेंगी लेडियाँ</div><div class="misra right">रश्क-ए-यूरप सरज़मीन-ए-इंडिया हो जाएगी</div></div><div class="couplet"><div class="misra left">है जवानी गर तुम्हारी कोई मिसरी की डली</div><div class="misra right">तो ज़ईफ़ी देख लेना सुन्कहसी हो जाएगी</div></div><div class="couplet"><div class="misra left">पाप करती है जवानी में अगर बाई तो क्या</div><div class="misra right">नाइका हो जाएगी तो पारसा हो जाएगी</div></div><div class="couplet"><div class="misra left">नौजवानी पर कभी लाज़िम नहीं नाज़-ओ-ग़ुरूर</div><div class="misra right">आज जो नोची है कल वह नाइका हो जाएगी</div></div><div class="couplet"><div class="misra left">पूछती तो हो मिरे ग़म की कहानी तुम नहीं</div><div class="misra right">सुन के मेरी मिस्ट्री, हिस्टीरिया हो जाएगी</div></div><div class="couplet"><div class="misra left">इन्क़िलाब-ए-दहर से यह बात ना-मुमकिन नहीं</div><div class="misra right">मर्दुआ औरत तो औरत मर्दुआ हो जाएगी</div></div><div class="couplet"><div class="misra left">जो सज़ा और अंत हर मर्द की सेवा करे</div><div class="misra right">बाद मरने के यक़ीनन अप्सरा हो जाएगी</div></div><div class="couplet"><div class="misra left">बाई जी हो कर फ़रिश्ता जब कही जाती हैं वह [१]</div><div class="misra right">नाइका हो कर यक़ीनन औलिया हो जाएगी</div></div><div class="couplet"><div class="misra left">रात को 'बेढब' इसी से हम निकलते ही नहीं</div><div class="misra right">दाई भी बिगड़ेगी, जोरो भी ख़फ़ा हो जाएगी</div></div></div><hr class="divider">
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

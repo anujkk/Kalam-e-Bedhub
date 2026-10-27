@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>मिस है बग़ल में और बियर भी है जार में - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 63;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_062.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="63" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_064.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">५९</div>
+        <div class="couplet-group"><div class="couplet"><div class="misra left">मिस है बग़ल में और बियर भी है जार में</div><div class="misra right">क्यों बार-बार जाएँ न हम ऐसे बार में</div></div><div class="couplet"><div class="misra left">शहरी का हो गुज़र किया टेढ़ी बाज़ार में</div><div class="misra right">देहाती जब कि रहते हैं क़ुर्ब-ओ-जवार में</div></div><div class="couplet"><div class="misra left">मच्छर हज़ारों आए तो खटमल भी सैकड़ों</div><div class="misra right">आए मगर न आप शब-ए-इंतिज़ार में</div></div><div class="couplet"><div class="misra left">औरत की राय लेना मुक़द्दम सा हो गया</div><div class="misra right">कुर्सी-नशीं को शहर के हर कारोबार में</div></div><div class="couplet"><div class="misra left">कोठे पे हैं रईस तो कोठी पे ख़ानगी</div><div class="misra right">जो बात है वो टेढ़ी है टेढ़ी बाज़ार में</div></div><div class="couplet"><div class="misra left">बी-बी मियाँ से कह के ये डोली पे चढ़ गई</div><div class="misra right">जो बात है कहार में वो कब है कार में</div></div><div class="couplet"><div class="misra left">बाबू पड़े हैं ओढ़ रहे सीवा टहल में दाई</div><div class="misra right">पत्ते में मिले न क्यों उन्हें बैंगन बुख़ार में</div></div><div class="couplet"><div class="misra left">चौके में जाते बाबू से दाई ने कह दिया</div><div class="misra right">आइए हो जब के चौक से छू के हो फुआर में</div></div></div><hr class="divider">
+      </div>
+      
+        <footer class="footnotes-container">
+          <hr class="footnote-divider">
+          <div class="footnote-item"><span class="fn-marker">१</span> <span class="fn-text">गया का एक मोहल्ला जहाँ कबाली है। जिस की सड़क का नाम अब शहीद रोड है, ये जामा मस्जिद से पश्चिम है और इसी से मुत्तसिल गया का बदनाम मोहल्ला चौक है। इस मोहल्ले में कुछ रईस भी रहते।</span></div>
+        </footer>
+        
+    </article>
+    
+  </main>
+</body>
+</html>

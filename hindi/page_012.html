@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>चाहिए लड्‌डू न पेड़ा न मिठाई चाहिए - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 12;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_011.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="12" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_013.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">१०</div>
+        <div class="couplet-group"><div class="couplet"><div class="misra left">चाहिए लड्‌डू न पेड़ा न मिठाई चाहिए</div><div class="misra right">आप दे सकते हैं हुक्म-ए-इम्तिनाई चाहिए</div></div><div class="couplet"><div class="misra left">एक औरत है बला बन के मेरे पीछे पड़ी</div><div class="misra right">इस पे हाकिम आप की ज़ोर-आज़माई चाहिए</div></div></div><div class="prose-block cols-1"><p>हाकिम दादा जी की हाज़िर-जवाबी और अपनी शर्त से ख़ुद गिरफ़्त में आ गए और न चाहते हुए भी इंजंक्शन देना पड़ा।</p><p>बिहार उर्दू अकादमी पटना के तावुन से छपी डॉक्टर निज़ामुद्दीन साहब की किताब "क़ाफ़िला जो गुज़र गया" में भी दादा जी का तज़किरा हुआ है। जिस में निज़ाम साहब ने उस वक़्त के माहौल पर रोशनी डाली है। जब गया में राय हरी प्रसाद म्युनिसिपैलिटी के चेयरमैन थे और ख़्वाजा जलालुद्दीन वकील वाइस चेयरमैन थे जो मोहल्ला सराए में रहते थे। राय हरी प्रसाद ने एक हुक्म जारी किया कि चौक की जितनी तवाइफ़ें हैं वह सब शहर ख़ाली करके मानपुर चली जाएँ। उन्हीं दिनों गया के दौलत बाग़ में एक मुशायरा हुआ, जिस में दादा जी ने एक ग़ज़ल पढ़ी। जिस में चुभता हुआ यह दिलचस्प शे'र भी था:</p></div><div class="couplet single"><div class="misra left">क्यों कि न बोल जाएँ हरी साकनान-ए-चौक</div><div class="misra right">नायब जो शहरयार का ख़्वाजा-सरा हुआ (पृ. ५६)</div></div><div class="prose-block cols-1"><p>दादा जी अपनी ख़ुश-मिज़ाजी फ़ितरत की वजह से हर माहौल व महफ़िल में न फ़क़त फ़िट हो जाते बल्कि वह हर महफ़िल का अगुआ बन जाते थे। चाहे वह महफ़िल पीने वालों की ही क्यों न हो। होली के मौक़े पर पीने वालों के बीच देख लीजिए उनकी ख़ुशी जो इन अशआर में अयाँ होती है :</p></div><div class="couplet-group"><div class="couplet"><div class="misra left">कोई गुड़ दे उधार होली में</div><div class="misra right">पीने की हो बहार होली में</div></div><div class="couplet"><div class="misra left">साल भर तूने इसको डाला है</div><div class="misra right">अब भी नथनी उतार होली में</div></div><div class="couplet"><div class="misra left">दिल का अरमाँ मिरे निकलता है</div><div class="misra right">साल में एक बार होली में</div></div><div class="couplet"><div class="misra left">मुझ से वादा तो था मगर अफ़सोस</div><div class="misra right">चढ़ गया है बुख़ार होली में</div></div></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

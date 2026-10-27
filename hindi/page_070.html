@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>जो क्लीयरेंस के दिन मैं मैं आज कोर्ट गया - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 70;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_069.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="70" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_071.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">६६</div>
+        <div class="couplet-group"><div class="couplet"><div class="misra left">जो क्लीयरेंस के दिन मैं मैं आज कोर्ट गया</div><div class="misra right">अजीब बात नज़र आई, दिल लुभाने की</div></div><div class="couplet"><div class="misra left">दो-शाला ओढ़े नज़र आईं औरतें दो-चार</div><div class="misra right">थी जिन के अंग पे अँगिया भी चारख़ाने की</div></div><div class="couplet"><div class="misra left">वो चलती-फिरती नज़ारत में जा डटीं आख़िर</div><div class="misra right">चलाई बात वहाँ फँसने और फँसाने की</div></div><div class="couplet"><div class="misra left">कहा ये डाँट के नाज़िर ने दूर हो जाओ</div><div class="misra right">है बात कहने की फ़ुर्सत न कुछ कमाने की</div></div><div class="couplet"><div class="misra left">जो उन में सब से बड़ी शोख़ और चंचल थी</div><div class="misra right">ये बोली बात नहीं कुछ भी ख़ौफ़ खाने की</div></div><div class="couplet"><div class="misra left">है क्लीयरेंस का दिन और लाइन क्लीयर है</div><div class="misra right">रजिस्ट्रार का डर है न फ़िक्र थाने की</div></div><div class="couplet"><div class="misra left">है कोर्ट शिप के लिए कोर्ट सा कहाँ मौक़ा</div><div class="misra right">तुम्हारे पास तो कुंजी है माल-ख़ाने की</div></div><div class="couplet"><div class="misra left">जो पूछे कोई तो बस इस से साफ़ कह देना</div><div class="misra right">उन्हें भी कुछ है ज़रूरत जमा कराने की</div></div><div class="couplet"><div class="misra left">ये सुन के आ गया नाज़िर के मुँह में भी पानी</div><div class="misra right">उठे और राह ली फ़ौरन ही माल-ख़ाने की</div></div><div class="couplet"><div class="misra left">कि इतने ही में वहाँ आ गए मियाँ बेढब</div><div class="misra right">किवाड़ी यूँ ही खुली रह गई ख़ज़ाने की</div></div></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

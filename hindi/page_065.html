@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>दिल किसी मेम से मिलना पैर से दुश्वार है - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 65;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_064.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="65" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_066.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">६१</div>
+        <div class="couplet-group"><div class="couplet"><div class="misra left">दिल किसी मेम से मिलना पैर से दुश्वार है</div><div class="misra right">उस तरफ़ है नूर चेहरे पर इधर थुपकार है</div></div><div class="couplet"><div class="misra left">गालियाँ जिस की सलामी मार जिस का प्यार है</div><div class="misra right">ऐसी औरत पर मरे उस पर ख़ुदा की मार है</div></div><div class="couplet"><div class="misra left">क्या बताएँ दोस्तो क्या अपना हाल-ए-ज़ार है</div><div class="misra right">हाथ ख़ाली और सर पर आ गया त्योहार है</div></div><div class="couplet"><div class="misra left">रोज़ सर पर लादिए जाते हो फ़रमाइश का बोझ</div><div class="misra right">अपने आशिक़ को समझ रक्खा कोई बेगार है</div></div><div class="couplet"><div class="misra left">इस तरह से है कचहरी को छछूँदर लग गया</div><div class="misra right">कोई दिन हो आज-कल इतवार ही इतवार है</div></div><div class="couplet"><div class="misra left">जो फ़िदाई दाई का है उस का है अदना ये हाल</div><div class="misra right">दिन को दाई रात को दाई का ख़िदमतगार है</div></div><div class="couplet"><div class="misra left">फ़िल्म में जाते ही ये मेअराज हासिल हो गई</div><div class="misra right">कल कही जाती थी बाई आज वो स्टार है</div></div><div class="couplet"><div class="misra left">हाँ इसी को कहते हैं हम इन्क़िलाब-ए-रोज़गार</div><div class="misra right">बीबी अब बाहर है पर्दा में ज़न-ए-बाज़ार है</div></div><div class="couplet"><div class="misra left">एक मिस लंदन की उल्फ़त में है ये मिस्टर का हाल</div><div class="misra right">हिन्द में वो ख़ुद है बेढब दिल समंदर-पार है</div></div></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

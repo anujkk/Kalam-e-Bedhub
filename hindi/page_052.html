@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>क्योंकर न भूल जाएँ हरी साकनान-ए-चौक - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 52;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_051.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="52" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_053.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">४८</div>
+        <div class="couplet-group"><div class="couplet"><div class="misra left">क्योंकर न भूल जाएँ हरी साकनान-ए-चौक</div><div class="misra right">नाइब जो शहरयार का ख़्वाजासरा हुआ</div></div><div class="couplet"><div class="misra left">आया ज़माने में जो इलेक्शन का दौर फिर</div><div class="misra right">हर सू रंगे सियारों का अब जमघटा हुआ</div></div><div class="couplet"><div class="misra left">टाइटल की आरज़ू थी, मगर यूं ही रह गई</div><div class="misra right">जलसा, डिनर से, नाच, ख़ुशामद से क्या हुआ</div></div><div class="couplet"><div class="misra left">है बज़्म-ए-शायराँ कि सियारों का ग़ोल है</div><div class="misra right">हर कोई कह रहा है जो बे-ढब हुआ हुआ</div></div></div>
+      </div>
+      
+        <footer class="footnotes-container">
+          <hr class="footnote-divider">
+          <div class="footnote-item"><span class="fn-marker">१</span> <span class="fn-text">ख़्वाजासरा : इस शेर का तज़्किरा पेश लफ़्ज़ में हो चुका है।</span></div>
+        </footer>
+        
+    </article>
+    
+  </main>
+</body>
+</html>

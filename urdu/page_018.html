@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>شاعری کا شوق - کلامِ بیڈھب</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    const PAGES = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101];
+    function jumpToPage(inputElement) {
+      const val = parseInt(inputElement.value, 10);
+      if (PAGES.indexOf(val) !== -1) {
+        window.location.href = "page_" + String(val).padStart(3, "0") + ".html";
+      } else {
+        inputElement.value = 18;
+      }
+    }
+</script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_017.html">→ پچھلا</a>
+      <a class="nav-link" href="index.html">☰ فہرست</a>
+      <div class="page-jump-container">
+        <span>صفحہ</span>
+        <input
+          type="number"
+          class="page-input"
+          value="18"
+          min="2"
+          max="101"
+          title="صفحہ نمبر لکھ کر Enter دبائیں"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);"
+          onchange="jumpToPage(this);"
+        />
+        <span>/ ۱۰۱</span>
+      </div>
+      <a class="nav-link" href="page_019.html">اگلا ←</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">۱۶</div>
+        <div class="prose-block cols-1"><p>بیڈھب صاحب کو علی الصبح اُٹھنے کی عادت تھی ۔ صبح میں اُٹھنے کے بعد گھومنے نکل جایا کرتے تھے ۔ سات بجے سے وہ اپنے کام میں لگ جاتے تھے ۔ یہی روٹین ان کے آخری دنوں تک چلتی رہی۔ گھریلو زندگی میں سبھی کے دلوں میں ان کے لئے جگہ تھی ۔ وہ وقت نکال کر گھر کے سبھی لوگوں کی خیریت پوچھ لیتے تھے اور ان کے دُکھ سُکھ کے بارے میں جاننے کی کوشش کرتے ۔ بچوں سے انھیں کافی لگاؤ تھا۔</p></div><h2 class="section-heading" style="text-align: center;">شاعری کا شوق</h2><div class="prose-block cols-1"><p>وکالت میں آنے کے بعد ہی ان کے دل میں شاعری کا شوق پیدا ہوا ۔ ۱۹۲۹ء ، ۱۹۳۰ء میں بابو اودھ کشور پرشاد (کُشتہ گیاوی) اور بابو جگیشور پرشاد خلش کے ساتھ کئی اور شعراء کی مدد سے ایک جماعت قائم ہوئی اور ہر مہینے شہر گیا میں مشاعرہ کا سلسلہ چلتا رہا۔ اُردو اور فارسی میں اچھی لیاقت رکھنے کی وجہ سے بیڈھب جی اس میں حصہ لیتے اور مشاعروں میں بلائے جاتے ۔</p></div><h2 class="section-heading" style="text-align: center;">تاریخ وفات</h2><div class="prose-block cols-1"><p>بیڈھب صاحب کا انتقال ۳ جولائی ۱۹۵۸ء کو کچھ عجیب حالات میں ہوا ۔ وہ روز کی طرح سویرے ٹہلنے نکلے اور دیر تک نہیں لوٹے ۔ ان کی لاش پھلگو ندی میں پڑی ملی ۔ اس طرح ایک نیک دل، دردمند، عظیم انسان کی زندگی کا چراغ یک بیک گُل ہو گیا اور علم و ادب کی محفل سونی ہوگئی ۔</p></div><div class="couplet-group"><div class="couplet"><div class="misra">بڑے شوق سے سُن رہا تھا زمانہ</div><div class="misra">ہم ہی سو گئے داستاں کہتے کہتے</div></div></div><div class="prose-block cols-1"><p>رَویندر کُمار روی</p><p>۶۵، نئی گودام روڈ، گیا</p><p>۳ جولائی ۱۹۸۳ء</p></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

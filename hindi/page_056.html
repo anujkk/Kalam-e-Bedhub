@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>मिसरा-ए-तरह : मिरा उजड़ा हुआ दिल एक मुरक़्क़ा है ज़माने का - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 56;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_055.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="56" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_057.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">५२</div>
+        <h2 class="section-heading" style="text-align: center;">मिसरा-ए-तरह : मिरा उजड़ा हुआ दिल एक मुरक़्क़ा है ज़माने का</h2><div class="couplet-group"><div class="couplet"><div class="misra left">न क्यों चस्का लगे मुरली पहाड़ी इस को जाने का</div><div class="misra right">कि जिस के इश्क़ में पिल्लू पड़ा है पाएख़ाने का</div></div><div class="couplet"><div class="misra left">नतीजा मिल गया बीबी को ए. बी. सी. पढ़ाने का</div><div class="misra right">मियाँ को काम सारा पड़ गया करना ज़नाने का</div></div><div class="couplet"><div class="misra left">अगर है चौक में जाने में ख़र्चा चार आने का</div><div class="misra right">तो चोके में मटके में है मज़ा सारे ज़माने का</div></div><div class="couplet"><div class="misra left">तरीक़ा ख़ूब निकला है ये ईश्वर के रिझाने का</div><div class="misra right">कि रंग-ओ-रूप मर्दाने का हो नख़रा ज़नाने का</div></div><div class="couplet"><div class="misra left">भगत जी को मिला वरदान ये आसन जमाने का</div><div class="misra right">खुले गायत्रे ही कुंजी से ताला सदियाने का</div></div><div class="couplet"><div class="misra left">इधर सोलह जवाँ हैं और उधर बस एक डाइमो</div><div class="misra right">तो फिर मोटर से डरते क्यों न बढ़ जाए मियाने का</div></div><div class="couplet"><div class="misra left">जवाँ बीबी के अक्सर पाँव की जानिब ही रहता</div><div class="misra right">कोई बूढ़ा मियाँ चाहे तकिया पायताने का</div></div><div class="couplet"><div class="misra left">ये मतलब है कि आए पेंग दिनारिड पीटर को</div><div class="misra right">नहीं तो पार्क में क्या फ़ायदा झूला लगाने का</div></div><div class="couplet"><div class="misra left">कोई इतवार को बे-ढब से मिल सकता नहीं घर पर</div><div class="misra right">कि ये दिन ख़ास है उन के लिए ससुराल जाने का</div></div></div>
+      </div>
+      
+        <footer class="footnotes-container">
+          <hr class="footnote-divider">
+          <div class="footnote-item"><span class="fn-marker">१</span> <span class="fn-text">मुरली पहाड़ी : गया शहर की एक पहाड़ी है जिस के दामन में भंगी क़ौम बस्ती है। बहुत बद-नाम महल्ला है।</span></div>
+        </footer>
+        
+    </article>
+    
+  </main>
+</body>
+</html>

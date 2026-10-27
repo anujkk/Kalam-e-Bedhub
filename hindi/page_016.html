@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>इब्तिदाई तालीम - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 16;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_015.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="16" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_017.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">१४</div>
+        <div class="prose-block cols-1"><p>कोई आल-औलाद नहीं है। यह गया में मुख़्तार थे और आख़िर वक़्त तक अपने छोटे भाई श्री बृज किशोर नारायण के साथ उनके नई गोदाम के मकान में रहे।</p></div><h2 class="section-heading" style="text-align: center;">इब्तिदाई तालीम</h2><div class="prose-block cols-1"><p>'बेढब' जी की पढ़ाई की इब्तिदा चीफ़ मिडिल स्कूल गया से हुई। हमेशा फ़र्स्ट डिवीज़न में पास होने की वजह से उन्हें स्कालरशिप मिलता रहा। जिससे ख़ानदान और बड़े भाई की पढ़ाई का ख़र्च चलता था। मिडिल स्टैंडर्ड पास करने के बाद वह टाउन स्कूल गया में दाख़िल हुए जिसका नाम इस वक़्त 'हरिदास सेमिनरी हाई स्कूल' है। वहाँ से उन्होंने एंट्रेंस इम्तिहान पास किया।</p></div><h2 class="section-heading" style="text-align: center;">कॉलेज की तालीम</h2><div class="prose-block cols-1"><p>एंट्रेंस इम्तिहान पास करने के बाद यह पटना कॉलेज में दाख़िल हुए। उस वक़्त साइंस कॉलेज अलग नहीं हुआ था। वहाँ से उन्होंने आई.एस.सी. का इम्तिहान पास किया। फिर हालात के पेशे-नज़र उन्हें अपना तालीमी सिलसिला ख़त्म करना पड़ा और हरिश्चंद्र स्कूल गया में बहैसियत टीचर काम करने लगे। इसके बाद टाउन स्कूल गया में भी कुछ दिन टीचर रहे लेकिन नौकरी में उनका दिल नहीं लगा और उन्होंने वकालत का इम्तिहान पास किया।</p></div><h2 class="section-heading" style="text-align: center;">शादी</h2><div class="prose-block cols-1"><p>श्री बृज किशोर नारायण की शादी १९०३ ई. में कायस्थ ख़ानदान में मोहल्ला नादिरह गंज गया के श्री हरबंस सहाय की लड़की से हुई। उनके तीन लड़के हुए जो मंदरजा ज़ैल ख़ानदानी सिलसिला (कुरसी नामा) से ज़ाहिर होता है—</p><p>श्री बृज किशोर नारायण ('बेढब गयावी')</p><p>(१) शिवनन्दन परशाद : (१) शोभा परशाद (लड़की), (२) वीरेन्द्र कुमार (लड़का), (३) नूतन परशाद (लड़की), (४) नीलिमा परशाद (लड़की), (५) हेमलता परशाद (लड़की), (६) मीनाक्षी परशाद (लड़की), (७) वीना परशाद (लड़की)</p><p>(२) जदुनन्दन परशाद : (१) किरण बाला परशाद (लड़की), (२) रवीन्द्र कुमार रवी (लड़का), (३) हितेन्द्र कुमार (लड़का), (४) सत्येन्द्र कुमार (लड़का), (५) राजेन्द्र कुमार (लड़का), (६) मधुबाला परशाद (लड़की)</p><p>(३) राम नन्दन परशाद : (१) मनोज कुमार (लड़का), (२) अनिल कुमार (लड़का), (३) रश्मि परशाद (लड़की), (४) नशी परशाद (लड़की)</p></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

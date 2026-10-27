@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>मिसरअ-ए-तरह़: दिल दिखा सकते हैं दर्द-ए-दिल दिखा सकते नहीं - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 83;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_082.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="83" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_084.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">७९</div>
+        <h2 class="section-heading" style="text-align: center;">मिसरअ-ए-तरह़: दिल दिखा सकते हैं दर्द-ए-दिल दिखा सकते नहीं</h2><div class="couplet-group"><div class="couplet"><div class="misra left">खूब ही पाला पड़ा नासिह को है रिंदों के साथ</div><div class="misra right">टाँग अब हरगिज़ किसी से वो लड़ा सकते नहीं</div></div><div class="couplet"><div class="misra left">काम चल जाए जो मिल जाए कोई माशूक़ मुफ़्त</div><div class="misra right">दिल लगा सकते हैं हम क़ीमत चुका सकते नहीं</div></div><div class="couplet"><div class="misra left">जो जवानी में किया करते थे कोठों ही की सैर</div><div class="misra right">कोठरी को छोड़ अब कोठे पर जा सकते नहीं</div></div><div class="couplet"><div class="misra left">पेंशनर्ज़ भी आज-कल के बन रहे हैं पेशावर</div><div class="misra right">अब न ये जब तक मिलें सब से कमा सकते नहीं</div></div><div class="couplet"><div class="misra left">जा के बृंदाबन हरी को हम अगर जपते रहें</div><div class="misra right">लोग फिर हम को इलेक्शन में हरा सकते नहीं</div></div><div class="couplet"><div class="misra left">चौक पर जाने को जाएँ शौक़ से जाएँ मगर</div><div class="misra right">फिर कभी चौक के अंदर आप जा सकते नहीं</div></div><div class="couplet"><div class="misra left">होने को कुछ भी नहीं दाई ने झट से कह दिया</div><div class="misra right">रंग बेढब हो गया कुछ तुम जमा सकते नहीं</div></div></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

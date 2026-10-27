@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>तरतीब - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 6;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_005.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="6" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_007.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">४</div>
+        <h2 class="section-heading" style="text-align: center;">तरतीब</h2><div class="prose-block cols-1"><p>मेरे दादा जी — मुरत्तिब — ५</p><p>मुक़द्दमा — मौलाना हकीम सैयद मोहम्मद यूसुफ़, इमाम व ख़तीब जामे मस्जिद गया — १७</p><p>ताअस्सुरात — प्रोफ़ेसर सैयद मोहम्मद हसनैन, सदर शोबा-ए-उर्दू मगध यूनिवर्सिटी, बोध गया — १९</p><p>कलाम — २५</p></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

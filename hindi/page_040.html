@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>मिसरा-ए-तरह : नज़र मिलाए नहीं मुस्कुराए जाते हैं - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 40;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_039.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="40" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_041.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">३६</div>
+        <h2 class="section-heading" style="text-align: center;">मिसरा-ए-तरह : नज़र मिलाए नहीं मुस्कुराए जाते हैं</h2><div class="couplet-group"><div class="couplet"><div class="misra left">जो दाम-ए-गेसू में पहले फँसाए जाते हैं</div><div class="misra right">वही अख़ीर में उल्लू बनाए जाते हैं</div></div><div class="couplet"><div class="misra left">ख़ुदा की शान जो मुर्ग़ी उड़ा नहीं सकते</div><div class="misra right">क्लब में देखिए अंडे उड़ाए जाते हैं</div></div><div class="couplet"><div class="misra left">हमारा दिल है कि आलू है या कोई बैंगन</div><div class="misra right">जो आप शौक़ से भुरता बनाए जाते हैं</div></div><div class="couplet"><div class="misra left">बला से चर्ख़ चले चाल ग़म नहीं इस का</div><div class="misra right">हम अपना आप ही चरख़ा चलाए जाते हैं</div></div><div class="couplet"><div class="misra left">क्लब के हॉल में यह सीन भी निराला है</div><div class="misra right">मिसों के साथ में मिस्टर नचाए जाते हैं</div></div><div class="couplet"><div class="misra left">किसी की सुनते हैं कब शैख़ और पंडित जी</div><div class="misra right">यह दोनों अपनी ही डफ़ली बजाए जाते हैं</div></div><div class="couplet"><div class="misra left">अजब है सीग़ा-ए-तालीम की नई जिद्दत</div><div class="misra right">गुरु के साथ जो चेले पढ़ाए जाते हैं</div></div><div class="couplet"><div class="misra left">सवार सर पे है लड़कों के भूत फ़ैशन का</div><div class="misra right">वह अपने बाप की दौलत उड़ाए जाते हैं</div></div><div class="couplet"><div class="misra left">किसी की दाल भी गलती नहीं है कौंसिल में</div><div class="misra right">जनाब अपनी ही खिचड़ी पकाए जाते हैं</div></div><div class="couplet"><div class="misra left">अजीब ढब से वह हँसते हैं हज़रत-ए-'बेढब'</div><div class="misra right">हमारे शे'र उन्हें जब सुनाए जाते हैं</div></div></div><hr class="divider">
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

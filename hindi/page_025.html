@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>सिर्फ़ मुआशरा था। अकबर के सामने मिल्लत थी और ... - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 25;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_024.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="25" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_026.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">२१</div>
+        <div class="prose-block cols-1"><p>सिर्फ़ मुआशरा था। अकबर के सामने मिल्लत थी और मुल्क भी—— अकबर का हुनर सिर्फ़ यह नहीं कि उन्होंने असरी वाक़िआत या मुतालबात के अदम-ए-इश्तिराक-ए-अमल की हैयत से ज़राफ़त की शीरीनी या तल्ख़ी निकाली; बल्कि अकबर ने ख़ुद ज़राफ़त को फ़िक्र का फ़ानूस अता किया, ऐसा रंगीन फ़ानूस जिस में आसार-ए-कुहनगी या शिकस्तगी आज भी नज़र नहीं आती।</p><p>रंग-ए-अकबर की जैसी पज़ीराई हुई, उर्दू ज़राफ़त में यह अदीम-उल-मिसाल है। अकबर की तक़लीद बहुतों ने की। ज़िंदगी की आमियाना हँसी की तासीर और फ़वाएद पर देखते ही देखते अदब की हँसी ने अपना दख़्ल व अमल बढ़ाया। लेकिन, यह इज़हार-ए-हसरत-नाक है कि उर्दू ज़राफ़त, बिलख़ुसूस नस्री अदब में ज़राफ़त, हनूज़ गिल्लरी शो से ज़ियादा ऊँची सतह हासिल न कर सकी—— 'आला ज़राफ़त' जो वक़्ती या हेजानी नहीं होती, जो ज़मान व मकान में महदूद नहीं रहती, और जिस से फ़िक्र व फ़हम को तवानाइयाँ मिलती हैं, इस के नमूने हमारे यहाँ ख़ाल-ख़ाल हैं——</p><p>हक़ीक़त तो यह है कि ज़राफ़त के नाम से जो अदबी सरमाया मंज़र-ए-आम पर आ रहा है उस में अवामी हँसी की बालादस्ती बरक़रार है। इस बालादस्ती की वजह भी ज़ाहिर है, यानी जमहूर का मिज़ाज। वह जमहूर जिस में अक्सरियत नाख़्वांदों या कम-ख़्वांदों की है—— फिर, यह पहलू भी क़ाबिल-ए-तवज्जोह है कि फ़ी ज़माना हम हँसने के बजाए हँसाने के लिए ज़ियादा कोशाँ रहते हैं, अदब में और आम रोज़-ओ-शब में भी। ख़ुसूसन हमारे ऐसे क़लमकार जिन में ज़राफ़त का माद्दा फ़ितरी और ख़ासा है वह इज़हार-ए-ज़राफ़त में अक़दार-ए-नफ़ासत व शराफ़त से बे-परवाही बरत रहे हैं। ऐसे ज़राफ़त-निगारों पर अफ़सोस होता है जो दूसरों की पगड़ी उतारने और अपना नाम उछालने में एक दूसरे से बाज़ी ले जाते हुए</p></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

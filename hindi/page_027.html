@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>अगले बुज़ुर्ग, ख़ुदा मग़फ़िरत करे! कैसे ज़िंद... - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 27;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_026.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="27" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_028.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">२३</div>
+        <div class="prose-block cols-1"><p>अगले बुज़ुर्ग, ख़ुदा मग़फ़िरत करे! कैसे ज़िंदा-दिल और तब्बाअ थे। फ़र्द हो या शहर, उनकी ख़ुसूसियात से उन बुज़ुर्गों की निगाहें ग़ाफ़िल न रहतीं। पटना, बिहार शरीफ़ और गया की शहरी ख़ुसूसियात पर यह मिसालें मैंने बचपन ही में सुनी थीं :—</p></div><div class="couplet-group"><div class="couplet"><div class="misra left">पटना : इक्का, वकील, गदहा</div><div class="misra right">पटने में जा के सुधरा</div></div><div class="couplet"><div class="misra left">बिहार शरीफ़ : तुर्क, तेली, ततार</div><div class="misra right">इन तीनों से बहार</div></div><div class="couplet"><div class="misra left">गया : मच्छर, मुख़्तार, मालज़ादी</div><div class="misra right">इन से गया की आबादी</div></div></div><div class="prose-block cols-1"><p>बृज किशोर नारायण से राक़िम के अच्छे मरासिम थे। मेरे बड़े भाई, सैयद मोहम्मद हसन साहब का जब जज की हैसियत से गया तबादला हुआ तो बृज किशोर नारायण से मेरे रवाबित बढ़े। मुशायरों के अलावा निजी सोहबतों में भी उन्हें सुनने के मवाक़े मिले। मुझे उनका यह तख़ल्लुस पसंद न था। वजह? उनकी ख़ुश-गोई में उनका शुऊर 'लुत्फ़-ए-शे'र' था यानी, उनके कलाम में ऐसे मुअस्सरात और महसूसात ख़ासे थे जिनका तख़ल्लुस की मा'नवियत से इलाक़ा न होता।</p><p>उन में असरी हस्सियत की कमी न थी। फ़िक्र का माद्दा कमज़ोर न था। लेकिन, मुशायरों में अंजुम मानपूरी, हमज़ाद गयावी और शौहर गयावी जैसे मक़बूल-ए-शहर ज़राफ़त-निगारों की वाह-वाह में वह अपना चराग़ कैसे न जलाए रखते! लाज़मन, अपनी ख़ुश-गोई को उन्होंने इसी तख़ल्लुस में असीर रखा।</p></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

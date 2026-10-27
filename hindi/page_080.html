@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>मिसरअ-ए-तरह़: बे-होश हो के होश में आने लगा हूँ मैं - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 80;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_079.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="80" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_081.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">७६</div>
+        <h2 class="section-heading" style="text-align: center;">मिसरअ-ए-तरह़: बे-होश हो के होश में आने लगा हूँ मैं</h2><div class="couplet-group"><div class="couplet"><div class="misra left">पंडित भी हो के मूँछ मुँडाने लगा हूँ मैं</div><div class="misra right">ज़िंदा पिदर को मुर्दा बनाने लगा हूँ मैं</div></div><div class="couplet"><div class="misra left">बम गोला और टैंक का ख़दशा नहीं रहा</div><div class="misra right">जब से मेमों से दिल को लगाने लगा हूँ मैं</div></div><div class="couplet"><div class="misra left">मुझ से ख़लीज-ए-हुस्न की गहराइयाँ न पूछ</div><div class="misra right">डुबकी लगा लगा के ठिकाने लगा हूँ मैं</div></div><div class="couplet"><div class="misra left">कौड़ी छदाम ख़र्च करूँ मैं तो किस लिए</div><div class="misra right">जब बे-टके का सिक्का जमाने लगा हूँ मैं</div></div><div class="couplet"><div class="misra left">नीचा दिखाने लग गई दाई मेरी मुझे</div><div class="misra right">जैसे सरा-ओ-चौक में जाने लगा हूँ मैं</div></div><div class="couplet"><div class="misra left">हूरान-ए-चौक से हैं बढ़ा के रस्म-ओ-राह</div><div class="misra right">ख़ुद अपने दिल में चकला बसाने लगा हूँ मैं</div></div><div class="couplet"><div class="misra left">अंग्रेज़ी पढ़ के मुझ को ये हासिल हुआ कमाल</div><div class="misra right">आलू के बदले अंडे उड़ाने लगा हूँ मैं</div></div><div class="couplet"><div class="misra left">बेढब निराले रंग से, बेढब कलाम से</div><div class="misra right">हर मसख़रे पे रंग जमाने लगा हूँ मैं</div></div></div><hr class="divider"><div class="prose-block cols-1"><p>मुशायरा ब-मक़ाम हैलट (जवाहर) टाउन हॉल, गया</p><p>वास्ते इमदाद-ए-बंगाल, बतारीख़ १८ दिसंबर १९४३ई.</p></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

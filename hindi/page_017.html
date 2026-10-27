@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>वकालत की इब्तिदा - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 17;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_016.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="17" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_018.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">१५</div>
+        <h2 class="section-heading" style="text-align: center;">वकालत की इब्तिदा</h2><div class="prose-block cols-1"><p>१९१७ ई. में उन्होंने गया शहर में वकालत शुरू की। मेहनती और तेज़ दिमाग़ वाले होने की वजह से उनकी वकालत ख़ूब चली और कुछ ही रोज़ में गया के मशहूर व मारूफ़ वकील हो गए। वकालत शुरू करने के बाद ही उनके पहले साहबज़ादे शिवनन्दन परशाद की पैदाइश गया में १९१८ ई. में हुई। १९२१ ई. में दूसरे साहबज़ादे जदुनन्दन परशाद और १९२६ ई. में तीसरे साहबज़ादे राम नन्दन परशाद की पैदाइश हुई।</p></div><h2 class="section-heading" style="text-align: center;">फ़ितरत और घरेलू ज़िंदगी</h2><div class="prose-block cols-1"><p>'बेढब' साहब सीधे-सादे और बहुत ही नेक-दिल इंसान थे, उनका कभी किसी से झगड़ा नहीं हुआ। दूसरे के दुख से दुखी होना और दूसरे के सुख से सुख का अहसास करना उनकी फ़ितरत थी। किसी के घर से अगर रोने की आवाज़ आती तो यह रोने की वजह जानने के लिए बेचैन हो जाते। उनकी नज़र में न तो ज़ात-पात का भेद-भाव था और न ऊँच-नीच का। वकालत के पेशे की वजह से, शोहरत के घमंड से यह कोसों दूर रहे। जहाँ बिहार काबीना के वुज़रा जिन में कई उनके साथ के पढ़े हुए थे, उनकी काफ़ी इज़्ज़त किया करते थे और उनका कलाम सुनने के लिए पकड़ कर अपने पास बिठाया करते थे, वहीं दूसरी तरफ़ आम आदमियों के साथ खाट पर बैठ कर बातचीत करने में भी नहीं झिझकते थे। उनकी नज़र में आदमी सिर्फ़ आदमी था। यह तन-मन-धन से ज़रूरतमंद इंसानों की मदद करना अपना फ़र्ज़ समझते थे।</p><p>'बेढब' साहब अपने मुल्क से ग़ैर-मामूली दिली मोहब्बत रखते थे। जंग-ए-आज़ादी के जो मनाज़िर उन्होंने देखे उनकी शायरी पर उसका भरपूर रंग नज़र आता है। वह आज़ादी-पसंद और आज़ाद ख़यालात के इंसान थे। न तो समाज में और न अपने ख़ानदान में यह किसी के ऊपर अपनी ख़्वाहिश का बोझ लादना चाहते थे। उनका दिल बहुत बड़ा था, जिस में इंसान और इंसानियत के लिए जगह थी।</p></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

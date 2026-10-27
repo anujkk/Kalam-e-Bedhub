@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>नज़र आते हैं। मौजूदा ज़राफ़त, यह नस्री हो या ... - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 26;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_025.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="26" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_027.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">२२</div>
+        <div class="prose-block cols-1"><p>नज़र आते हैं। मौजूदा ज़राफ़त, यह नस्री हो या शे'री, इस अलमिए में मुब्तला है।</p><p>आप के ज़ेर-ए-नज़र "कलाम-ए-बेढब" है। इस शे'री मजमुए को बेढब कलाम न समझें—— बृज किशोर नारायण आज ज़िंदा नहीं वरना इस तख़ल्लुस पर आज किसी ना-अहल तमस्ख़ुर का इस्तिफ़सार ना-माक़ूल बात न होगी। 'बेढब' तख़ल्लुस इख़्तियार कर के शायर ने अपनी शख़्सियत और अशआर हर दो को कम-रुत्बा कर दिया। मुमकिन है 'बेढब' की इनकिसारी दर-असल उन सामईन के लिए मख़सूस थी जो दूसरों के क़हक़हों में शिरकत को "शे'र-फ़हमी" समझते थे; या जिन के मेयार-ए-ज़राफ़त में नफ़ासत से ज़ियादा हमाक़त को दख़्ल था।</p><p>आबजहानी बृज किशोर नारायण, अच्छे खाते-पीते कायस्थ ख़ानदान के फ़र्द थे। तालीम ऊँची न थी मगर तहज़ीब में कमी न थी। रख-रखाव, ओढ़ना-पहनना घर और बाहर नुमायाँ रहता। उनका पेशा वकालत था। मुआश व मिज़ाज ने उन्हें बहुत सोशल बना दिया था। मुवक्किलों और हाकिमों के अलावा वह मोअज़्ज़िज़ीन-ए-शहर में भी हर-दिल-अज़ीज़ थे। उर्दू उनकी मादरी ज़बान थी। शायरी के रसिया थे। गया के शाइराना माहौल और रुअसा-ए-शहर के अशग़ाल ने उन दिनों शायरी को इशरत-कारी और इशरत को शायर-नवाज़ी बना दिया था—— गए गुज़रे अज़ीमाबाद की तरह शहर गया में भी ऐसे दिलदार व दिलबर उमरा कम न थे, जिन्हें हुस्न से ज़ियादा हसीना से</p></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

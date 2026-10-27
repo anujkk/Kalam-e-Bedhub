@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>मुक़द्दमा - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 21;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_020.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="21" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_022.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">१७</div>
+        <h2 class="section-heading" style="text-align: center;">मुक़द्दमा</h2><h2 class="section-heading" style="text-align: center;">मौलाना हकीम सैयद मोहम्मद यूसुफ़ साहब, फुलवारवी</h2><h2 class="section-heading" style="text-align: center;">इमाम व ख़तीब, जामे मस्जिद - गया</h2><hr class="divider"><div class="prose-block cols-1"><p>आबजहानी 'बेढब' जी से मेरी राह-ओ-रस्म तो न थी मगर मैंने मुशायरों में अक्सर उनका कलाम ख़ुद उनकी ज़बान से सुना है। गया का यह मिज़ाह-निगार शायर जब मुशायरे की महफ़िलों में अपना कलाम पेश करने के लिए उठता तो महफ़िल में ज़िंदगी की एक लहर दौड़ जाती थी। संजीदा मिज़ाज और रख-रखाव वाले सामईन के दिलों में भी एक चुलबुलाहट पैदा हो जाती और कुछ देर के लिए सब ही एक रंग में रंग जाते जैसे होली की बहार आ गई हो। 'बेढब' जी सीधे-सीधे अंदाज़ में बोल-चाल की तरह अपना कलाम पेश करते और सुनने वाले उनके मज़ाहिया कलाम पर लोट-पोट हो जाते। हर तरफ़ से वाह-वाह की सदा बुलंद हो जाती, हँसी और क़हक़हे का रिमझिम मींह बरसने लगता। जब तक 'बेढब' जी अपना कलाम सुनाते रहते किसी की आवाज़ बंद न होती थी। सब की बाछें खिली रहती थीं और एक अजीब ख़ुशी और मुसर्रत का आलम पूरे मुशायरे में पैदा हो जाता था।</p><p>'बेढब' जी की शायरी वह ख़ुद-रौ पौधा है जो मुनासिब आब-ओ-हवा में ख़ुद ही बढ़ता और परवान चढ़ता रहता है और एक मंज़िल पर आकर अपना फ़ितरी हुस्न नुमायाँ कर देता है, वह किसी माली की तराश-ख़राश का एहसान-मंद नहीं होता।</p><p>'बेढब' की तबीअत में ख़ुश-तब्ई और ज़राफ़त फ़ितरी थी और इसके परवान चढ़ने में उनके माहौल ने पूरी मदद की। गया में रईसों की कमी नहीं थी। नवाब, रईस, ज़मींदार...</p></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>मिसरअ-ए-तरह़: लुत्फ़ जब है अपनी दुनिया आप पैदा कीजिए - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 73;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_072.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="73" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_074.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">६९</div>
+        <h2 class="section-heading" style="text-align: center;">मिसरअ-ए-तरह़: लुत्फ़ जब है अपनी दुनिया आप पैदा कीजिए</h2><div class="couplet-group"><div class="couplet"><div class="misra left">पेट ख़ाली हो तो हो मुँह आप चिकना कीजिए</div><div class="misra right">गाँठ में जब कुछ न हो तो रोब गाँठा कीजिए</div></div><div class="couplet"><div class="misra left">पढ़ते हैं कॉलेज में तो फ़ैशन भी सीखा कीजिए</div><div class="misra right">बाप-दादे की कमाई को लुटाया कीजिए</div></div><div class="couplet"><div class="misra left">हो गया पैट्रोल और ग़ल्ले के ऊपर कंट्रोल</div><div class="misra right">गाड़ी मोटर की जगह अब हाथ रिक्शा कीजिए</div></div><div class="couplet"><div class="misra left">अब तो दर्शन को भी ढूँढे से कहीं मिलती नहीं</div><div class="misra right">रेज़गारी जब मिले तो आप पूजा कीजिए</div></div><div class="couplet"><div class="misra left">ताकिए चील ही बजाए का कोई मोटा शिकार</div><div class="misra right">रात को उल्लू की सूरत आप देखा कीजिए</div></div><div class="couplet"><div class="misra left">घर की दौलत को लुटा कर के हासिल डिग्रियाँ</div><div class="misra right">दर-ब-दर फिर नौकरी की भीक माँगा कीजिए</div></div><div class="couplet"><div class="misra left">आलू बैंगन की तरह है आपके हाथों में दिल</div><div class="misra right">जितना जी चाहे मसल कर इस को भुरता कीजिए</div></div><div class="couplet"><div class="misra left">जब किसी से ढब नहीं मिलता है बेढब आपका</div><div class="misra right">डेढ़ चावल की अलग खिचड़ी पकाया कीजिए</div></div></div><hr class="divider"><div class="prose-block cols-1"><p>मुशायरा ब-मक़ाम एस. डी. जैन कॉलेज आरा</p><p>मोरख़ा २८ मार्च १९४४ई.</p></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

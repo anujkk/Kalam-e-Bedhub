@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>काँग्रेसी गोल्डन जुबली, गया - १९३५ ई. - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 31;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_030.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="31" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_032.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">२७</div>
+        <div class="couplet-group"><div class="couplet"><div class="misra left">एयरशिप है सलामत तो ज़मीं वालों का है कहना</div><div class="misra right">कहाँ जाएगा आख़िर उड़ के अब यह आसमाँ हम से</div></div><div class="couplet"><div class="misra left">तुम्हें नौरोज़ के दिन मिल ही जाएगा कोई टाइटल</div><div class="misra right">यह कह कर वह बड़े दिन में ही लेते डालियाँ हम से</div></div><div class="couplet"><div class="misra left">ख़ुदा की शान है अब औरतें मर्दों से कहती हैं</div><div class="misra right">पहना दो बेड़ियाँ हम को, पहन लो चूड़ियाँ हम से</div></div><div class="couplet"><div class="misra left">ब-हर महफ़िल अजब यह आदमी बेढब हैं 'बेढब' भी</div><div class="misra right">ग़ज़ल की धुन में सुनना चाहते हैं ठुमरियाँ हम से</div></div></div><hr class="divider"><h2 class="section-heading" style="text-align: center;">काँग्रेसी गोल्डन जुबली, गया - १९३५ ई.</h2>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

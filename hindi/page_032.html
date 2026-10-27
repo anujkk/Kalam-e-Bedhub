@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>मिसरा-ए-तरह : तू ख़ुदा है तेरी ख़ुदाई है - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 32;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_031.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="32" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_033.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">२८</div>
+        <h2 class="section-heading" style="text-align: center;">मिसरा-ए-तरह : तू ख़ुदा है तेरी ख़ुदाई है</h2><div class="couplet-group"><div class="couplet"><div class="misra left">जब से फ़ैशन की धुन समाई है</div><div class="misra right">मूँछ दाढ़ी पर आफ़त आई है</div></div><div class="couplet"><div class="misra left">कर लें बाबू हज़ार बी.ए. पास</div><div class="misra right">घर में बीवी की बस दुहाई है</div></div><div class="couplet"><div class="misra left">हर घड़ी हाथ में है तेग़-ओ-तबर</div><div class="misra right">वह है माशूक़ या क़साई है</div></div><div class="couplet"><div class="misra left">क्यों न हो इश्क़ टाईं टाईं फ़िश</div><div class="misra right">जेब में जब न एक पाई है</div></div><div class="couplet"><div class="misra left">क्यों न आए मरीज़-ए-इश्क़ को लुत्फ़</div><div class="misra right">रात को नर्स दिन को दाई है</div></div><div class="couplet"><div class="misra left">मिस के गाल और होंठ क्या कहना</div><div class="misra right">एक समोसा है एक मिठाई है</div></div><div class="couplet"><div class="misra left">रोटी चलती नहीं वकालत से</div><div class="misra right">हम से अच्छा तो नानबाई है</div></div><div class="couplet"><div class="misra left">उनकी दो बीवियों में शाम व सहर</div><div class="misra right">रूस-जापान की लड़ाई है</div></div><div class="couplet"><div class="misra left">कहते अमले रजिस्ट्रार से हैं</div><div class="misra right">तू ख़ुदा है तेरी ख़ुदाई है</div></div><div class="couplet"><div class="misra left">क्यों रखे घर में इस्तरी कोई</div><div class="misra right">जब कि धोबी-घाट की धुलाई है</div></div><div class="couplet"><div class="misra left">शेर की महफ़िलों में 'बेढब' ने</div><div class="misra right">अपनी डफ़ली अलग बजाई है</div></div></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

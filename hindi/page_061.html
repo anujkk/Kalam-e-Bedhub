@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>मिसरा-ए-तरह : हवाएँ ठंडी ठंडी आती हैं दामान-ए-साहिल से - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 61;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_060.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="61" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_062.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">५७</div>
+        <h2 class="section-heading" style="text-align: center;">मिसरा-ए-तरह : हवाएँ ठंडी ठंडी आती हैं दामान-ए-साहिल से</h2><div class="couplet-group"><div class="couplet"><div class="misra left">मोहब्बत में मुझे पाला पड़ा है कैसे जाहिल से</div><div class="misra right">कि लिख भेजा जवाब-ए-नामा चिट पर और पेंसिल से</div></div><div class="couplet"><div class="misra left">ये सावन और भादों में निकलती है सदा दिल से</div><div class="misra right">इलाही जल्द हम भी अब डबल हो जाएँ सिंगल से</div></div><div class="couplet"><div class="misra left">उधर वो मिस कि बे-ख़ौफ़-ओ-ख़तर चढ़ती है घोड़े पर</div><div class="misra right">इधर हम हैं कि जब चढ़ते हैं गिर जाते हैं साइकल से</div></div><div class="couplet"><div class="misra left">उधर उस मिस के हाथों में हमेशा रॉड लाइट</div><div class="misra right">इधर हम हैं कि टेनिस बाल भी छूटते हैं मुश्किल से</div></div><div class="couplet"><div class="misra left">नतीजा मिल गया बीवी को अप-टू-डेट करने का</div><div class="misra right">मियाँ के नाक में दम आ गया हर रोज़ के बिल से</div></div><div class="couplet"><div class="misra left">मिस-ए-लंदन के आगे क्यों न औरत घर की जल जाए</div><div class="misra right">इलेक्ट्रिक लाइट को निस्बत नहीं है कुछ भी कैंडल से</div></div><div class="couplet"><div class="misra left">करें इश्क़-ए-बुताँ बे-ढब कि कुत्ते का अदब मानें</div><div class="misra right">इसी तशवीश में शब को निकलते हैं वो मुश्किल से</div></div></div><h2 class="section-heading" style="text-align: center;">मुशायरा ब-मक़ाम गया</h2>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

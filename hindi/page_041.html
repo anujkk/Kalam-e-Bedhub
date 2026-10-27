@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>हूर-ओ-विश से कोई कहता था सियह-फ़ाम अभी - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 41;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_040.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="41" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_042.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">३७</div>
+        <div class="couplet-group"><div class="couplet"><div class="misra left">हूर-ओ-विश से कोई कहता था सियह-फ़ाम अभी</div><div class="misra right">तुम जो मिल जाओ मिले सुब्ह से यह शाम अभी</div></div><div class="couplet"><div class="misra left">उड़ती फिरती मिस-कसन है एयरशिप की तरह</div><div class="misra right">अभी पंजाब तो बम्बई अभी, आसाम अभी</div></div><div class="couplet"><div class="misra left">रम रहेंगे वही रस्ते में लिए रात को रम</div><div class="misra right">दिन को मजमा' में जो जपते हैं सिया-राम अभी</div></div><div class="couplet"><div class="misra left">उन को क्या समझे कोई जब कि है ऐसी सूरत</div><div class="misra right">राम के भक्त अभी पैरव-ए-इस्लाम अभी</div></div><div class="couplet"><div class="misra left">डार्विन थ्योरी को समझा है उसी बेटे ने</div><div class="misra right">देता था बाप पे बन्दर का जो इल्ज़ाम अभी</div></div><div class="couplet"><div class="misra left">दाम में तुझ को फँसाएगा कभी सौदागर</div><div class="misra right">रोज़ बे-दाम का देता है जो बादाम अभी</div></div><div class="couplet"><div class="misra left">देखना इस का परिणाम जो होगा आख़िर</div><div class="misra right">रोज़ करते हैं जो हाते जी, जो परनाम अभी</div></div><div class="couplet"><div class="misra left">एक दिन नीचा दिखाएँगी यह लड़कों को ज़रूर</div><div class="misra right">लड़कियाँ करने लगीं हैं जो बियायाम अभी</div></div><div class="couplet"><div class="misra left">कुछ न कुछ मिल ही रहेगा तुम्हें इक टाइटिल</div><div class="misra right">जान-ओ-दिल से जो करो ख़िदमत-ए-हुक्काम अभी</div></div><div class="couplet"><div class="misra left">चढ़ते फागुन ही जवानों को हुआ क्या सौदा</div><div class="misra right">रस बम्बई से तलब करते हैं जो आम अभी</div></div><div class="couplet"><div class="misra left">होगा कॉलेज में वही रश्क-ए-मसीहा इक दिन</div><div class="misra right">शर्म से बाप का लेता जो नहीं नाम अभी</div></div><div class="couplet"><div class="misra left">साइंस कॉलेज की है यह बज़्म-ए-सुख़न ऐ 'बेढब'</div><div class="misra right">साइंस और पोएट्री दोनों से लो तुम काम अभी</div></div></div><hr class="divider">
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

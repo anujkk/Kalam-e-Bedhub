@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>मेरी ससुराल अब की चैत में लज़्ज़त से ख़ाली है - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 81;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_080.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="81" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_082.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">७७</div>
+        <div class="couplet-group"><div class="couplet"><div class="misra left">मेरी ससुराल अब की चैत में लज़्ज़त से ख़ाली है</div><div class="misra right">न बी-बी है न सरहज है न दाई है न साली है</div></div><div class="couplet"><div class="misra left">जो पासी-ख़ाने का आशिक़ है ब-शैदा-ए-कलाली है</div><div class="misra right">तो फिर आराम-गह उस की म्युनिसिपल्टी की नाली है</div></div><div class="couplet"><div class="misra left">उतरती है ज़मीं पर आसमाँ की रहने वाली है</div><div class="misra right">कहें क्यों फिर न ताड़ी को अनोखी है निराली है</div></div><div class="couplet"><div class="misra left">रईसों का अजब रहता है रिश्ता चौक वाली से</div><div class="misra right">बड़ी जो है वो भाऊज है जो छोटी है वो साली है</div></div><div class="couplet"><div class="misra left">बढ़ी इक मात्रा से है भला ये उस से कब चौके</div><div class="misra right">कि ये तो चौका वाली है अगर वो चौक वाली है</div></div><div class="couplet"><div class="misra left">बुआ भी ख़ुश, बहन भी राय में और वो भी है राज़ी</div><div class="misra right">मगर अफ़्सोस है बेढब कि मेरा हाथ ख़ाली है</div></div></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>मुतफ़र्रिक़ात - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 99;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_098.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="99" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_100.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        
+        <h2 class="section-heading" style="text-align: center;">मुतफ़र्रिक़ात</h2><div class="couplet-group"><div class="couplet"><div class="misra left">किस पे करती सिंगार होली में</div><div class="misra right">मियाँ पास है न यार होली में</div></div><div class="couplet"><div class="misra left">कोई बेढब को कुछ नहीं देता</div><div class="misra right">माँगता है हज़ार होली में</div></div></div><hr class="divider"><div class="couplet-group"><div class="couplet"><div class="misra left">पहना के कोट पैंट नचा कर के अपने साथ</div><div class="misra right">इक मिस ने शैख़ जी को भी मिस्टर बना दिया</div></div><div class="couplet"><div class="misra left">आते बसंत इतनी पिलाई किसी ने भाँग</div><div class="misra right">उल्लू-ए-बसंत क्या मुझे भसंगी बना दिया</div></div></div><hr class="divider"><div class="couplet-group"><div class="couplet"><div class="misra left">इधर-उधर जिसे आदत हो खटखटाने की</div><div class="misra right">समझ लो लत है पड़ी उस को मार खाने की</div></div><div class="couplet"><div class="misra left">है डाक बँगले में मौजूद मिस्ट्रेस और मिस</div><div class="misra right">ज़रूरत अब नहीं मिस्टर को चौक जाने की</div></div></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

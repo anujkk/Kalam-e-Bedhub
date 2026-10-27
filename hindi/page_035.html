@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>क़सम अल्लाह की हम ख़ाक डालें इस वकालत पर - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 35;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_034.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="35" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_036.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">३१</div>
+        <div class="couplet-group"><div class="couplet"><div class="misra left">क़सम अल्लाह की हम ख़ाक डालें इस वकालत पर</div><div class="misra right">चेयरमैनी अगर मिल जाए थोड़ी देश ख़िदमत पर</div></div><div class="couplet"><div class="misra left">ज़नाना भेस में अक्सर फिरा करते हैं मोगे भी</div><div class="misra right">समझ कर सोच कर मरना ज़रा सूरत-शबाहत पर</div></div><div class="couplet"><div class="misra left">ज़नाना रूप धरते हैं जो ईश्वर के रिझाने को</div><div class="misra right">हँसी आती है मुझ को ऐसे यारान-ए-तरीक़त पर</div></div><div class="couplet"><div class="misra left">कचहरी से किसी दिन जेब ख़ाली मैं अगर लौटा</div><div class="misra right">बहुत लानत-मलामत होती है घर में वकालत पर</div></div><div class="couplet"><div class="misra left">इधर कुछ मूँछ को छाँटो, उधर दाढ़ी को कुछ काटो</div><div class="misra right">कि अब मौक़ूफ़ फ़ैशन है फ़क़त तर्ज़-ए-हजामत पर</div></div><div class="couplet"><div class="misra left">सबब इस का फ़क़त यह है कि यह लफ़्ज़ मुअन्नस है</div><div class="misra right">जवानान-ए-वतन जो टूट पड़ते हैं अदालत पर</div></div><div class="couplet"><div class="misra left">मैं सच कहता हूँ जो आशिक़ तुम्हारा मुफ़्त-ख़ोरा है</div><div class="misra right">न बाज़ आएगा मिलने से कभी लानत-मलामत पर</div></div><div class="couplet"><div class="misra left">लिए फिरते हैं जलसों में जो अपने साथ मैडम को</div><div class="misra right">डिनर पर है डिनर उन को उन्हें दावत पे दावत पर</div></div><div class="couplet"><div class="misra left">दवाओं का है एक चक्कर, पढ़ें हम शे'र क्या 'बेढब'</div><div class="misra right">हमारी शायरी सदक़े है बीवी की अलालत पर</div></div></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

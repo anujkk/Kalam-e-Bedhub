@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>शायरी का शौक़ - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 18;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_017.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="18" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_019.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">१६</div>
+        <div class="prose-block cols-1"><p>'बेढब' साहब को अलबह-ए-सुबह उठने की आदत थी। सुबह में उठने के बाद घूमने निकल जाया करते थे। सात बजे से वह अपने काम में लग जाते थे। यही रूटीन उनके आख़िरी दिनों तक चलती रही। घरेलू ज़िंदगी में सभी के दिलों में उनके लिए जगह थी। वह वक़्त निकाल कर घर के सभी लोगों की ख़ैरियत पूछ लेते थे और उनके दुख-सुख के बारे में जानने की कोशिश करते। बच्चों से उन्हें काफ़ी लगाव था।</p></div><h2 class="section-heading" style="text-align: center;">शायरी का शौक़</h2><div class="prose-block cols-1"><p>वकालत में आने के बाद ही उनके दिल में शायरी का शौक़ पैदा हुआ। १९२९, १९३० ई. में बाबू अवध किशोर परशाद ('कुश्ता गयावी') और बाबू जुगल किशोर परशाद 'ख़लिश' के साथ कई और शोअरा की मदद से एक जमाअत क़ायम हुई और हर महीने शहर गया में मुशायरे का सिलसिला चलता रहा। उर्दू और फ़ारसी में अच्छी लियाक़त रखने की वजह से 'बेढब' जी इसमें हिस्सा लेते और मुशायरों में बुलाए जाते।</p></div><h2 class="section-heading" style="text-align: center;">तारीख़-ए-वफ़ात</h2><div class="prose-block cols-1"><p>'बेढब' साहब का इंतिक़ाल ३ जुलाई १९५८ ई. को कुछ अजीब हालात में हुआ। वह रोज़ की तरह सवेरे टहलने निकले और देर तक नहीं लौटे। उनकी लाश फल्गू नदी में पड़ी मिली। इस तरह एक नेक-दिल, दर्दमंद, अज़ीम इंसान की ज़िंदगी का चराग़ यक-ब-यक गुल हो गया और इल्म-ओ-अदब की महफ़िल सूनी हो गई।</p></div><div class="couplet single"><div class="misra left">बड़े शौक़ से सुन रहा था ज़माना</div><div class="misra right">हमीं सो गए दास्ताँ कहते कहते</div></div><div class="prose-block cols-1"><p>रवीन्द्र कुमार रवी</p><p>६५, नई गोदाम रोड, गया</p><p>३ जुलाई १९८३ ई.</p></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

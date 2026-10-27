@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>मिसरअ-ए-तरह़: है ज़नाने में नए ढब से बहार आई हुई - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 66;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_065.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="66" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_067.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">६२</div>
+        <h2 class="section-heading" style="text-align: center;">मिसरअ-ए-तरह़: है ज़नाने में नए ढब से बहार आई हुई</h2><div class="couplet-group"><div class="couplet"><div class="misra left">जब से बाबू की तबीअ़त उस की सौदाई हुई</div><div class="misra right">जाती है चौक की दाई ख़ूब उट्ठानी हुई</div></div><div class="couplet"><div class="misra left">गोरी काली दाई बाई सब पे जो लट्टू रहे</div><div class="misra right">ये तबीअ़त क्या हुई इक ख़ासा हरजाई हुई</div></div><div class="couplet"><div class="misra left">हाए रे फ़ैशन ने कितना उन को हल्का कर दिया</div><div class="misra right">अब तो कंठी के एवज़ गर्दन में नकटाई हुई</div></div><div class="couplet"><div class="misra left">हम ने जो पहुँची मँगाई ख़ुद वो पहुँची दौड़ कर</div><div class="misra right">वो जो फिरती थी महीने भर से कतराई हुई</div></div><div class="couplet"><div class="misra left">जिस की ज़ुल्फ़ें हैं बड़ी उस मिस में बातें हैं बड़ी</div><div class="misra right">है छँटी वो जिस की देखो ज़ुल्फ़ छँटवाई हुई</div></div><div class="couplet"><div class="misra left">शहर में मिलती कहाँ हैं अब बुताँ-ए-ज़िंदा-दिल</div><div class="misra right">इस सबब से मुर्दनी है हर तरफ़ छाई हुई</div></div><div class="couplet"><div class="misra left">रात भर सर्दी से बेढब रह गए लट्ठे हुए</div><div class="misra right">सर्द हो हो कर तबीअ़त रह गई आई हुई</div></div></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

@@ -1,0 +1,124 @@
+:root {
+  --bg: #f7f5f0; --card: #ffffff; --text: #2b2b2b; --accent: #7b1e1e;
+  --border: #e5dfd5; --meta: #7a7369; --hover: #f0ebe1; --chip: #fbf9f5;
+  --fs: 1;
+}
+:root[data-theme="dark"] {
+  --bg: #16140f; --card: #1f1c16; --text: #e8e2d6; --accent: #e0a090;
+  --border: #3a352b; --meta: #a39a8b; --hover: #2a261e; --chip: #26231b;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #16140f; --card: #1f1c16; --text: #e8e2d6; --accent: #e0a090;
+    --border: #3a352b; --meta: #a39a8b; --hover: #2a261e; --chip: #26231b;
+  }
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  font-family: 'Noto Sans Devanagari', 'Nirmala UI', sans-serif;
+  background: var(--bg); color: var(--text); line-height: 1.8;
+  display: flex; flex-direction: column; min-height: 100vh;
+}
+body.urdu { font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', 'Nafees Nastaleeq', serif; line-height: 2.4; }
+
+/* nav */
+.book-nav { position: sticky; top: 0; z-index: 100; background: var(--card); border-bottom: 1px solid var(--border);
+  box-shadow: 0 2px 8px rgba(0,0,0,.05); padding: 8px 16px; }
+.nav-container { max-width: 800px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+.spacer { flex: 1; }
+.nav-link, .lang-switch { text-decoration: none; color: var(--accent); font-weight: 600; padding: 4px 12px; border-radius: 4px; white-space: nowrap; font-size: 15px; line-height: 1.8; }
+.nav-link:hover, .lang-switch:hover { background: var(--hover); }
+.nav-link.disabled { color: var(--meta); opacity: .4; pointer-events: none; }
+.lang-switch { border: 1px solid var(--border); }
+.lang-switch[lang="ur"] { font-family: 'Noto Nastaliq Urdu', serif; }
+.lang-switch[lang="hi"] { font-family: 'Noto Sans Devanagari', sans-serif; }
+.page-jump-container { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: var(--meta);
+  background: var(--chip); border: 1px solid var(--border); padding: 2px 10px; border-radius: 20px; }
+.page-input { width: 56px; font: inherit; font-size: 14px; font-weight: 700; text-align: center; color: var(--accent);
+  background: var(--card); border: 1px solid var(--border); border-radius: 4px; padding: 0 4px; line-height: 1.6; }
+.page-input:focus, #q:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+.page-input::-webkit-outer-spin-button, .page-input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+.page-input[type=number] { -moz-appearance: textfield; }
+.tools { display: inline-flex; gap: 4px; }
+.tool { font: inherit; font-size: 13px; line-height: 1.4; background: var(--chip); color: var(--accent); border: 1px solid var(--border);
+  border-radius: 4px; padding: 3px 9px; cursor: pointer; }
+.tool:hover { background: var(--hover); }
+
+/* page */
+.page-container { max-width: 800px; width: 100%; margin: 24px auto; background: var(--card); padding: 44px 54px;
+  border: 1px solid var(--border); box-shadow: 0 4px 18px rgba(0,0,0,.05); border-radius: 4px; flex: 1;
+  font-size: calc(16px * var(--fs)); }
+.page-number { text-align: center; font-size: 1.2em; font-weight: 700; color: var(--meta); margin-bottom: 22px; }
+.section-heading { font-size: 1.2em; font-weight: 700; color: var(--accent); margin: 16px 0 20px; line-height: 1.5; }
+.align-center { text-align: center; } .align-left { text-align: left; } .align-right { text-align: right; }
+.urdu .section-heading { line-height: 2.2; }
+
+.couplet-group { margin: 18px 0; }
+.couplet { display: flex; justify-content: space-between; gap: 28px; margin-bottom: 10px; }
+.misra { flex: 1; }
+.misra:first-child { text-align: start; }
+.misra:last-child { text-align: end; }
+.stanza { margin: 22px auto; text-align: center; }
+.stanza-line { margin-bottom: 6px; }
+.prose-block { margin: 16px 0; text-align: justify; font-size: .97em; }
+.prose-block.cols-2 { column-count: 2; column-gap: 24px; }
+.prose-block p { margin-bottom: 10px; text-indent: 24px; }
+.colophon { text-align: center; color: var(--meta); font-size: .92em; margin: 18px 0 6px; }
+.divider { width: 40%; border: 0; border-top: 1px solid var(--meta); opacity: .6; margin: 24px auto; }
+.footnotes-container { margin-top: 32px; font-size: .82em; color: var(--meta); }
+.footnote-divider { width: 25%; border: 0; border-top: 1px solid var(--meta); margin: 0 0 12px; }
+[dir="rtl"] .footnote-divider { margin-inline-start: 0; }
+.fn-marker { font-weight: 700; color: var(--accent); margin-inline-end: 6px; }
+
+/* index */
+.index-header { text-align: center; margin: 6px 0 24px; }
+.book-title { font-family: 'Rozha One', 'Noto Sans Devanagari', serif; font-size: 2.1em; color: var(--accent); line-height: 1.5; }
+.urdu .book-title { font-family: 'Noto Nastaliq Urdu', serif; font-weight: 700; line-height: 2; }
+.book-author { font-size: 1.05em; margin-top: 4px; }
+.book-subtitle { font-size: .9em; color: var(--meta); }
+.search-box { margin: 0 0 26px; }
+#q { width: 100%; font: inherit; font-size: 16px; padding: 8px 14px; background: var(--chip); color: var(--text);
+  border: 1px solid var(--border); border-radius: 22px; }
+#results { margin-top: 10px; border: 1px solid var(--border); border-radius: 6px; max-height: 60vh; overflow: auto; }
+#results a { display: block; padding: 8px 14px; border-bottom: 1px dashed var(--border); text-decoration: none; color: var(--text); font-size: .95em; line-height: 1.9; }
+#results a:hover { background: var(--hover); }
+#results small { display: block; color: var(--meta); font-size: .8em; }
+#results mark { background: #ffe58a; color: #000; border-radius: 2px; }
+#results .none { padding: 12px 14px; color: var(--meta); }
+.toc-section { margin-bottom: 26px; }
+.toc-section-title { font-size: 1.1em; margin-bottom: 4px; padding-bottom: 4px; border-bottom: 2px solid var(--accent); }
+.toc-section-title a { color: var(--accent); text-decoration: none; }
+.toc-list { list-style: none; }
+.toc-item { border-bottom: 1px dashed var(--border); }
+.toc-link { display: flex; justify-content: space-between; align-items: baseline; gap: 14px; text-decoration: none; color: var(--text); padding: 7px 6px; }
+.toc-link:hover { background: var(--hover); color: var(--accent); }
+.toc-title { flex: 1; font-weight: 500; }
+.toc-page { font-size: .88em; font-weight: 600; color: var(--meta); }
+
+/* landing */
+.landing-main { margin: auto; padding: 40px 20px; text-align: center; }
+.landing-title { font-family: 'Rozha One', 'Noto Sans Devanagari', serif; color: var(--accent); font-size: clamp(30px, 6vw, 52px); line-height: 1.6; font-weight: 400; }
+.landing-title span[lang="ur"], .landing-sub span[lang="ur"] { font-family: 'Noto Nastaliq Urdu', serif; }
+.landing-sub { color: var(--meta); margin: 4px 0 32px; }
+.lang-cards { display: flex; gap: 18px; justify-content: center; flex-wrap: wrap; }
+.lang-card { display: flex; flex-direction: column; gap: 6px; min-width: 220px; padding: 24px 28px; text-decoration: none; color: var(--text);
+  background: var(--card); border: 1px solid var(--border); border-radius: 8px; box-shadow: 0 4px 18px rgba(0,0,0,.05); }
+.lang-card:hover { border-color: var(--accent); }
+.lang-card[lang="ur"] { font-family: 'Noto Nastaliq Urdu', serif; line-height: 2.2; }
+.lc-title { font-size: 1.5em; color: var(--accent); font-weight: 700; }
+.lc-lang { color: var(--meta); }
+
+@media (max-width: 640px) {
+  .page-container { padding: 22px 16px; margin: 10px auto; border-left: 0; border-right: 0; border-radius: 0; }
+  .nav-container { justify-content: center; }
+  .couplet { flex-direction: column; gap: 0; margin-bottom: 16px; text-align: center; }
+  .misra:first-child, .misra:last-child { text-align: center; }
+  .prose-block.cols-2 { column-count: 1; }
+  .prose-block { text-align: start; }
+}
+@media print {
+  .book-nav, .tools, .search-box { display: none; }
+  body, .page-container { background: #fff; color: #000; box-shadow: none; border: 0; }
+  .page-container { margin: 0; padding: 0; }
+}

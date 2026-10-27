@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>मिसरअ-ए-तरह़: दिल-ए-मुसाफ़िर का जहाँ डूबे वहीं शाम है - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 78;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_077.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="78" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_079.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">७४</div>
+        <h2 class="section-heading" style="text-align: center;">मिसरअ-ए-तरह़: दिल-ए-मुसाफ़िर का जहाँ डूबे वहीं शाम है</h2><div class="couplet-group"><div class="couplet"><div class="misra left">दाई, बाई को जिसे ख़ुश रखना सुबह-ओ-शाम है</div><div class="misra right">उन की ख़िदमत उस को गोया ख़िदमत-ए-ह़ुक्काम है</div></div><div class="couplet"><div class="misra left">चुपके चौके में हो दाख़िल कुछ न बोलेगा कोई</div><div class="misra right">चौक का हर जाने वाला देख लो बदनाम है</div></div><div class="couplet"><div class="misra left">क्यों न मीठे हो सर्दी में इसे करने को चट</div><div class="misra right">दिल मेरा अख़रोट है, पिस्ता है या बादाम है</div></div><div class="couplet"><div class="misra left">एक पहेली है, समझने वाले समझें तो ज़रा</div><div class="misra right">एक शजर है और उस की शाख़ में दो आम है</div></div><div class="couplet"><div class="misra left">है जवानी मेरी माशूक़ की जो जापानी बम</div><div class="misra right">तो मेरे दिल को भी समझो बर्मा है आसाम है</div></div><div class="couplet"><div class="misra left">नाम "गंगिया" दाई का है और "जमन" बाई का</div><div class="misra right">उन का संगम होते ही दिल मेरा तीरथ धाम है</div></div><div class="couplet"><div class="misra left">अपने ढब में कहता है बेढब बड़े ही ढंग की बात</div><div class="misra right">ये नहीं समझो फ़क़त इस का हँसाना काम है</div></div></div><hr class="divider"><div class="prose-block cols-1"><p>मुशायरा बर-मकान...</p></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>چُپکے مانگو تو کوئی دے بھی دے - کلامِ بیڈھب</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    const PAGES = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101];
+    function jumpToPage(inputElement) {
+      const val = parseInt(inputElement.value, 10);
+      if (PAGES.indexOf(val) !== -1) {
+        window.location.href = "page_" + String(val).padStart(3, "0") + ".html";
+      } else {
+        inputElement.value = 13;
+      }
+    }
+</script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_012.html">→ پچھلا</a>
+      <a class="nav-link" href="index.html">☰ فہرست</a>
+      <div class="page-jump-container">
+        <span>صفحہ</span>
+        <input
+          type="number"
+          class="page-input"
+          value="13"
+          min="2"
+          max="101"
+          title="صفحہ نمبر لکھ کر Enter دبائیں"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);"
+          onchange="jumpToPage(this);"
+        />
+        <span>/ ۱۰۱</span>
+      </div>
+      <a class="nav-link" href="page_014.html">اگلا ←</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">۱۱</div>
+        <div class="couplet-group"><div class="couplet"><div class="misra">چُپکے مانگو تو کوئی دے بھی دے</div><div class="misra">کرتے کیوں ہو گُو ہار ہولی میں</div></div></div><div class="prose-block cols-1"><p>جن اشعار کے بارے میں کوئی خاص بات مجھے معلوم ہوسکی اس کا تذکرہ میں نے کردیا۔ لیکن جن کے بارے میں کچھ معلوم نہ ہو سکا اس کا بتانا میرے لئے بہت مشکل ہے۔ دادا جی شعر کہتے تھے فقط لوگوں کو ہنسانے کے لئے، انھیں رنج و غم سے نجات دلانے کے لئے۔ انھیں شہرت کی خواہش نہیں تھی اس لئے پرچے اور رسالے میں ان کے کلام بہت کم ملتے ہیں۔ احباب نے لے کر کبھی چھاپ دیا تو چھاپ دیا۔ اس لئے اُن کا مطبوعہ کلام بہت کم ملتا ہے۔ ہاں وہ مشاعروں کی رونق رہا کرتے تھے ، اور وہیں اپنی جولانی طبع دیکھتے تھے ، اس لئے اُن کے مجموعۂ کلام پر تفصیلی گفتگو بہت مشکل ہے۔</p><p>دادا جی نے دائی ، بائی ، بیوی ، شیخ ، برہمن وغیرہ کے ذریعہ جو کچھ بھی کہا ہے وہ فقط سماج اور وقت کے ماحول پر طنز ہے۔ میں ان کی شاعری پر کیا روشنی ڈالوں گا ، یہ کام تو فن کے جاننے والوں کا ہے ۔ بہر حال جتنے اشعار مجھے مل سکے وہ جیسے بھی ہیں میں ہر طبقہ کے شوقین مزاج لوگوں کی خدمت میں پیش کر رہا ہوں ، ساتھ ہی ساتھ کچھ ترمیم کے ساتھ ان ہی کے ایک شعر سے دادا جی کی آتما پر عقیدت کے پھول چڑھاتا ہوں ؎</p></div><div class="couplet-group"><div class="couplet"><div class="misra">آپ کی تعریف بیڈھب، کیا کروں بندہ نواز</div><div class="misra">ہے ضعیفی پر جوانی کا ہے دل میں سوز و ساز</div></div><div class="couplet"><div class="misra">آپ تو گرچہ رہے ہر وقت سادھو دیوتا</div><div class="misra">خوش مزاجی، آپ کا فن، خوش بیانی دلربا</div></div><div class="couplet"><div class="misra">ہر کلب میں آپ کے اوصاف کا چرچا رہا</div><div class="misra">آپ کی مٹھی میں تھا گویا کہ دل احباب کا</div></div></div><div class="prose-block cols-1"><p>اس مجموعے کی اشاعت میں پوری طرح توجہ نہ دی جا سکی ہے اس لئے قارئین کرام میری غلطیوں اور کوتاہیوں کو معاف کرینگے اور اپنے مفید مشورے سے آگاہ کرینگے میں آپ لوگوں کا مشکور ہوں گا۔</p><p>اس مختصر التماس کے بعد مناسب ہے کہ داداجی کی زندگی اور مختصر سوانح حیات سے قارئین کو متعارف کراتا چلوں</p></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

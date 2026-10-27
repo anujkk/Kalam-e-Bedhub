@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>मिसरअ-ए-तरह़: शोख़ी हो तो शोख़ी हो ह़या हो तो ह़या हो - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 76;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_075.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="76" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_077.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">७२</div>
+        <h2 class="section-heading" style="text-align: center;">मिसरअ-ए-तरह़: शोख़ी हो तो शोख़ी हो ह़या हो तो ह़या हो</h2><div class="couplet-group"><div class="couplet"><div class="misra left">फ़ैशन ही के धुन में जो कोई शख़्स पड़ा हो</div><div class="misra right">घर भर के लिए जानिए इक ख़ास बला हो</div></div><div class="couplet"><div class="misra left">बीमार-ए-मोहब्बत के लिए डॉक्टरी क्या</div><div class="misra right">जब नर्स है क्यों आप नहीं उठ के खड़ा हो</div></div><div class="couplet"><div class="misra left">जो ख़ून ही करता हो ख़ुद रसील में हो दाख़िल</div><div class="misra right">फिर कौन से सेक्शन में कहो उस की सज़ा हो</div></div><div class="couplet"><div class="misra left">जहंगी में अगर दान करे कुछ भी पत चूक</div><div class="misra right">हर शख़्स को मिल जाए जो क़िस्मत में बदा हो</div></div><div class="couplet"><div class="misra left">ताज़ीम को उस की न करें आप तकल्लुफ़</div><div class="misra right">ख़ुद ही दर-ए-दौलत पे जो हर वक़्त खड़ा हो</div></div><div class="couplet"><div class="misra left">फिर क्यों न जवानी हो नए सिरे से मयस्सर</div><div class="misra right">बेढब मेरी क़िस्मत में जो माशूक़ नया हो</div></div></div><hr class="divider"><div class="prose-block cols-1"><p>मुशायरा ब-मक़ाम जहाँनाबाद</p></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

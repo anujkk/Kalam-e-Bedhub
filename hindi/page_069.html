@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>कर लूँ मैं इस से शादी फ़ौरन ही दिल्लगी में - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 69;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_068.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="69" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_070.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">६५</div>
+        <div class="couplet-group"><div class="couplet"><div class="misra left">कर लूँ मैं इस से शादी फ़ौरन ही दिल्लगी में</div><div class="misra right">साली हो गर सुशीला लुत्फ़ आए आशिक़ी में</div></div><div class="couplet"><div class="misra left">देखो तो लीडरों में कुछ फ़र्क़ पाओगे तुम</div><div class="misra right">बाहर की पालिसी में, अंदर की पालिसी में</div></div><div class="couplet"><div class="misra left">जिन की नज़र में जादू है तीर और ख़ंजर</div><div class="misra right">वो काम कुछ दिखाएँ जा कर के जर्मनी में</div></div><div class="couplet"><div class="misra left">पढ़-लिख के जब से देवी मिस बनने लग गई हैं</div><div class="misra right">पांडे भी मिल गए हैं अब जा के पादरी में</div></div><div class="couplet"><div class="misra left">ये काली बीबी अपनी होती है लाल-पीली</div><div class="misra right">दाई को कह दिया है बीबी जो गड़बड़ी में</div></div><div class="couplet"><div class="misra left">बीबी जो पढ़-पढ़ा कर बी.ए. में पास हो गई</div><div class="misra right">रहना पड़ा मियाँ को बीबी के अर्दली में</div></div><div class="couplet"><div class="misra left">दिन को है रहती दाई सेवा-टहल में उन के</div><div class="misra right">पर रात को हैं पांडे जी उस की नौकरी में</div></div><div class="couplet"><div class="misra left">यों वक़्त सर्फ़ होता है अपना घर में बैठे</div><div class="misra right">कुछ देर "सरस्वती" में कुछ देर "माधुरी" में</div></div><div class="couplet"><div class="misra left">सुन कर कलाम मेरा हर एक कह रहा है</div><div class="misra right">बेढब मज़ा है यारो बेढब की शायरी में</div></div></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

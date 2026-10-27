@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>दरगा लाल - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 15;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_014.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="15" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_016.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">११</div>
+        <h2 class="section-heading" style="text-align: center;">दरगा लाल</h2><div class="prose-block cols-1"><p>(१) जुगल किशोर परशाद | (२) विशनू लाल</p><p>विशनू लाल → बाँके बिहारी लाल → [(१) हंस राज परशाद, (२) डॉक्टर अशोक कुमार वर्मा, (३) अमेश कुमार वर्मा]</p><p>जुगल किशोर परशाद की औलाद : (१) अनवर कुमार परशाद, (२) देवेन्द्र परशाद (अम्बू बाबू), (३) राधे परशाद, (४) ललित कुमार सिन्हा (पंचम बाबू)</p></div><hr class="divider"><h2 class="section-heading" style="text-align: center;">बंसी लाल</h2><div class="prose-block cols-1"><p>(१) लखन नारायण लाल | (२) गौरी शंकर परशाद | (३) गोबिन्द परशाद | (४) देवी लाल</p><p>गौरी शंकर परशाद → भगवान परशाद वर्मा</p><p>देवी लाल → [(१) बिचू परशाद, (२) लियाक़त लाल]</p></div><hr class="divider"><h2 class="section-heading" style="text-align: center;">माधो लाल</h2><div class="prose-block cols-1"><p>(१) राज किशोर नारायण | (२) बृज किशोर नारायण ('बेढब')</p><p>बृज किशोर नारायण ('बेढब') की औलाद : (१) डॉक्टर शिवनन्दन परशाद, (२) जदुनन्दन परशाद, (३) डॉक्टर राम नन्दन परशाद</p></div><hr class="divider"><div class="prose-block cols-1"><p>श्री राज किशोर नारायण 'बेढब' साहब के बड़े भाई थे। उनकी शादी मुंगेर के पास गोगरी गाँव में एक नामी कायस्थ ख़ानदान में हुई थी। उनसे</p></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

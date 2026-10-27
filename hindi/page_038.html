@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>मिसरा-ए-तरह : जो होश में आ जाए वह दीवाना नहीं है - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 38;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_037.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="38" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_039.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">३४</div>
+        <h2 class="section-heading" style="text-align: center;">मिसरा-ए-तरह : जो होश में आ जाए वह दीवाना नहीं है</h2><div class="couplet-group"><div class="couplet"><div class="misra left">क्यों बार को कहते हो कि मयख़ाना नहीं है</div><div class="misra right">किस वक़्त यहाँ दौर में पैमाना नहीं है</div></div><div class="couplet"><div class="misra left">हर शख़्स यह क्यों कहता है पैमाना नहीं है</div><div class="misra right">आबिद का यह घर है कोई मयख़ाना नहीं है</div></div><div class="couplet"><div class="misra left">आसन पे कमर बाँधे तो बोली कोई देवी</div><div class="misra right">यह चौक है धर्मात्मा! बुतख़ाना नहीं है</div></div><div class="couplet"><div class="misra left">आया है क़दम जब से किसी सब्ज़-क़दम का</div><div class="misra right">अब कोर्ट में पेशी नहीं, जुर्माना नहीं है</div></div><div class="couplet"><div class="misra left">बाई के उलट-फेर में बीवी से मुलाक़ात</div><div class="misra right">सालाना है माहना है, रोज़ाना नहीं है</div></div><div class="couplet"><div class="misra left">स्टाम्प-फ़रोशी है कि है जाम-फ़रोशी</div><div class="misra right">कब बॉक्स में इस के कोई पैमाना नहीं है</div></div><div class="couplet"><div class="misra left">इजलास में भी चलता है पैमाना ही का दौर</div><div class="misra right">दरख़्वास्त रिजेक्टेड है जो पैमाना नहीं है</div></div><div class="couplet"><div class="misra left">नाज़िर हैं यह क्या गोया कचहरी के हैं ढिबरी</div><div class="misra right">कब पास में उन के कोई परवाना नहीं है</div></div><div class="couplet"><div class="misra left">यह हौसला दिल में है कि ढसीले [१] को भी जोएँ</div><div class="misra right">पर क्या करें बहिन के लिए दाना नहीं है</div></div><div class="couplet"><div class="misra left">सर्दी से उधर रहता है कठरा हुआ 'बेढब'</div><div class="misra right">वह ता'ना उधर देती हैं मर्दाना नहीं है</div></div></div><hr class="divider">
+      </div>
+      
+        <footer class="footnotes-container">
+          <hr class="footnote-divider">
+          <div class="footnote-item"><span class="fn-marker">१</span> <span class="fn-text">ढसीला : एक तवाइफ़ का नाम है।</span></div>
+        </footer>
+        
+    </article>
+    
+  </main>
+</body>
+</html>

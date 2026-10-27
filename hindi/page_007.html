@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>मेरे दादा जी - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 7;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_006.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="7" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_008.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">५</div>
+        <h2 class="section-heading" style="text-align: center;">मेरे दादा जी</h2><div class="prose-block cols-1"><p>३ जुलाई १९५८ ई. की बात है, अचानक यह सुना गया कि गया के मशहूर शायर, और कामयाब वकील बृजजू बाबू इस दुनिया में नहीं रहे। यह ख़बर हवा की तरह तमाम शहर में फैल गई। यह मेरे दादा जी थे। उनका पूरा नाम श्री बृज किशोर नारायण था। 'बेढब गयावी' से यह मशहूर थे। दुनिया से उनके उठ जाने की बात हम लोगों को ख़्वाब जैसी लग रही थी जो बाद में हक़ीक़त बन गई। अख़बारात, रसाइल ने इस जाँकाह हादसे पर आँसू बहाए।</p><p>दादा जी का इस दुनिया से उठ जाना गया की अदबी महफ़िलों को सूना कर दिया। मुशायरों में उनकी बड़ी कमी महसूस की जाने लगी। आज भी उनके मिलने-जुलने वाले उनको बड़ी मोहब्बत और अज़्मत से याद करते हैं और उनका यह शे'र अक्सर पढ़ते हैं, जो उन्होंने रेलवे इंस्टीट्यूट गया के एक मुशायरे में पढ़ा था। उस मुशायरे में जनाब जिगर मुरादाबादी के साथ साथ कई मशहूर शोअरा शरीक थे:</p></div><div class="couplet single"><div class="misra left">बख़्श के हुस्न को बस एक लंगोटी 'बेढब'</div><div class="misra right">हम से देखा न गया हुस्न का रुसवा होना</div></div><div class="prose-block cols-1"><p>मेरी उम्र क़रीबन आठ दस साल की रही होगी। जब दादा जी हमेशा के लिए इस दुनिया को छोड़ कर चले गए। शायरी क्या चीज़ होती है मुझे मालूम भी न था। सोलह-सत्रह साल क़ब्ल उनके लिखे हुए कुछ पुर्ज़े मुझे मिले जिन्हें घर की नौकरानी कूड़े के साथ फेंकने जा रही थी। मैंने उनको उठा लिया और संभाल कर रख दिया। उर्दू में लिखे उन पुर्ज़ों को उस वक़्त मैं नहीं पढ़ सका, क्योंकि मैं उर्दू नहीं जानता था। लेकिन मैंने यह बात उसी वक़्त दिल में ठान ली कि मैं इसे पढ़ूँगा और इस तरह मेरे दिल में उर्दू सीखने का शौक़ पैदा हुआ...</p></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>मिसरा-ए-तरह : साहब-ए-दीद से अच्छा नहीं पर्दा करना - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 36;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_035.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="36" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_037.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">३२</div>
+        <h2 class="section-heading" style="text-align: center;">मिसरा-ए-तरह : साहब-ए-दीद से अच्छा नहीं पर्दा करना</h2><div class="couplet-group"><div class="couplet"><div class="misra left">इश्क़ दाई से एवज़ बाई के गाँठा करना</div><div class="misra right">बग्घी मोटर की जगह जैसे हो रुका करना</div></div><div class="couplet"><div class="misra left">दाई चौके में यह पांडे से कहा करती है</div><div class="misra right">देखना मेरी कटोरी को न जूठा करना</div></div><div class="couplet"><div class="misra left">कर के सब कुछ भी न रहे भगत जी के भगता</div><div class="misra right">काम देता है बहुत चंदन व टीका करना</div></div><div class="couplet"><div class="misra left">चूक पर जाने हुए चौंकते रहते हो अगर</div><div class="misra right">जा के चौके में नहीं खाने में चूका करना</div></div><div class="couplet"><div class="misra left">एक दिन तुम को भी बेटी न पढ़ाने लग जाए</div><div class="misra right">ए.बी.सी बीवी को हरगिज़ न पढ़ाया करना</div></div><div class="couplet"><div class="misra left">बस यही सोच के बे-पर्दा वह मिस रहती है</div><div class="misra right">साहब-ए-दीद से लाज़िम नहीं पर्दा करना</div></div><div class="couplet"><div class="misra left">मुस्लिम व हिन्दू में ताकि न रहे फ़र्क़ कोई</div><div class="misra right">दाढ़ी और टिक का फ़ैशन है सफ़ाया करना</div></div><div class="couplet"><div class="misra left">बाबू साहब को दिया मिस ने टका सा यह जवाब</div><div class="misra right">तुम से मिल कर है नहीं मुँह हमें काला करना</div></div><div class="couplet"><div class="misra left">मास्टरों से नहीं क्यों कर कोई थर-थर काँपे</div><div class="misra right">उन को आता है बहुत टेढ़े को सीधा करना</div></div><div class="couplet"><div class="misra left">मेरी बातों पे हो क्यों आग-बगूला होते</div><div class="misra right">गरम हो कर हो मुझे चाहते ठंडा करना</div></div><div class="couplet"><div class="misra left">क्या समझते हो मेरे दिल को तुम आलू-बैंगन</div><div class="misra right">चाहते हो जो मसल कर उसे भुरता करना</div></div><div class="couplet"><div class="misra left">मार्निंग कोर्ट में बीवी ने कहा यह 'बेढब'</div><div class="misra right">दिन को सो जाओ मगर रात को जागा करना</div></div></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

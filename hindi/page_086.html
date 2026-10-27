@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>मिसरअ-ए-तरह़: ख़ुद वो हैराँ हो गया मुझ को भी हैराँ कर दिया - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 86;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_085.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="86" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_087.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">८२</div>
+        <h2 class="section-heading" style="text-align: center;">मिसरअ-ए-तरह़: ख़ुद वो हैराँ हो गया मुझ को भी हैराँ कर दिया</h2><div class="couplet-group"><div class="couplet"><div class="misra left">शाइरों ने आज दिलचस्पी का सामाँ कर दिया</div><div class="misra right">शुक्र है उन का कि पूरा दिल का अरमाँ कर दिया</div></div><div class="couplet"><div class="misra left">दिल के बहलाने की ख़ातिर उस गली में हम गए</div><div class="misra right">ज़ालिमों ने मुझ पे मश्क़-ए-तीर-ए-मिज़्गाँ कर दिया</div></div><div class="couplet"><div class="misra left">दिल उड़ा कर ले गया पहलू से मेरे इस तरह</div><div class="misra right">ख़ुद वो हैराँ हो गया मुझ को भी हैराँ कर दिया</div></div><div class="couplet"><div class="misra left">देखना है कोर्ट से उन को सज़ा मिलती है क्या</div><div class="misra right">थानेदारों ने तो उन का आज चालाँ कर दिया</div></div><div class="couplet"><div class="misra left">हम समझते हैं कि उन को वस्ल से इनकार है</div><div class="misra right">नीची नज़रों से उन्हों ने गरचे हाँ हाँ कर दिया</div></div><div class="couplet"><div class="misra left">पहले तो ऐसे बहादुर ऐसे ताक़त-वर न थे</div><div class="misra right">इक हसीना ने मगर अब मर्द-ए-मैदाँ कर दिया</div></div><div class="couplet"><div class="misra left">उस ह़लीम-उत्-तबा औरत से चली जो छेड़-छाड़</div><div class="misra right">रात ज़ाहिद ने मज़ाक़ाँ उस को उरयाँ कर दिया</div></div></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

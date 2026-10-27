@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>मैंने इतने बड़े काम का बोझ अपने कांधे पर उठाय... - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 10;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_009.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="10" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_011.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">८</div>
+        <div class="prose-block cols-1"><p>मैंने इतने बड़े काम का बोझ अपने कांधे पर उठाया और अंजाम तक पहुँचाया।</p><p>मिज़ाह-निगारी, ख़ुश-मिज़ाजी और ख़ुश-बयानी दादा जी की शख़्सियत में शामिल थी। इसलिए लोग उनके अशआर सुनने के लिए बेताब रहते थे। दूर-दूर से आकर लोग मुशायरे के लिए उन्हें बुला कर ले जाते थे। शादी के मौक़े पर उनके कहे हुए कुछ अशआर मुझे याद आ रहे हैं। उन्हें पेश कर रहा हूँ—</p></div><div class="couplet-group"><div class="couplet"><div class="misra left">अगर समधिन को समधी का कहीं दीदार हो जाए</div><div class="misra right">तो दम के दम में देखो फ़ैसला दो-चार हो जाए</div></div><div class="couplet"><div class="misra left">ख़ुदा रखे तिरा दरवाज़ा समधिन इतना चौड़ा है</div><div class="misra right">बराती तो बराती इससे हाथी पार हो जाए</div></div></div><div class="prose-block cols-1"><p>समस्तीपुर में उन्होंने शादी के मौक़े पर जो कहा उसमें से एक शेर पेश है:</p></div><div class="couplet single"><div class="misra left">बराती के लिए काफ़ी है कटलेट, केक और बिस्कुट</div><div class="misra right">सराती को यह गंगा पार का केला मुबारक हो</div></div><div class="prose-block cols-1"><p>मज़ाहिया शेर में जो बात है क्या कहना, उसमें अपनी एक ख़ासियत है, उसका अपना रंग है, उसमें अपना फ़ितरी हुस्न नुमायाँ करने की पुर-असर ताक़त है। दादा जी की शायरी उनकी पुर-मज़ाक़ तबीयत की पहचान है। उनका मज़ाहिया कलाम बहुत ही दिलकश, बा-असर और वक़्त के हिसाब से मौज़ूँ और मुनासिब है। उनके कलाम में एक तरफ़ समाज, धरम, ज़ाती, मौलवी, बरहमन पर तंज़ है तो दूसरी तरफ़ मुर्दा दिलों में ज़िंदगी डाल देने की ख़ासियत भी है। सखी समाज पर तंज़ करते हुए उन्होंने कहा:</p></div><div class="couplet single"><div class="misra left">तरीक़ा ख़ूब निकला है यह ईश्वर को रिझाने का</div><div class="misra right">कि रंग-ओ-रूप मर्दाने का हो नख़रा ज़नाने का</div></div><div class="prose-block cols-1"><p>सखी समाज में यक़ीन रखने वाले भगवान को शौहर और ख़ुद को बीवी मान कर और औरतों की शक्ल इख़्तियार करके भगवान को रिझाने की कोशिश करते हैं। मंदरजा ज़ैल अशआर में उन्होंने इस ढकोसले-पन की धज्जियाँ उड़ाई हैं—</p></div><div class="couplet-group"><div class="couplet"><div class="misra left">समझ कर बूझ कर ऐसे बनो नारी भगत जी तुम</div><div class="misra right">कठिन भगवान को भी होगा फिर नारी से नर करना</div></div><div class="couplet"><div class="misra left">ज़नाने भेस में अक्सर फिरा करते हो कू-ए-गली</div><div class="misra right">समझ कर बूझ कर मुन्ना ज़रा सूरत जिसारत पर</div></div></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

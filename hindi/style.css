@@ -1,0 +1,296 @@
+@import url('[https://fonts.googleapis.com/css2?family=Rozha+One&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap](https://fonts.googleapis.com/css2?family=Rozha+One&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap)');
+
+:root {
+  --bg-color: #f7f5f0;
+  --card-bg: #ffffff;
+  --text-color: #2b2b2b;
+  --accent-color: #7b1e1e;
+  --border-color: #e5dfd5;
+  --meta-color: #7a7369;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Noto Sans Devanagari', 'Nirmala UI', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.8;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.book-nav {
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  z-index: 100;
+  padding: 10px 20px;
+}
+
+.nav-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--accent-color);
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  background-color: #f0ebe1;
+}
+
+.nav-link.disabled {
+  color: #ccc;
+  pointer-events: none;
+}
+
+/* Interactive Page Jump Box in Header */
+.page-jump-container {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 15px;
+  color: var(--meta-color);
+  background: #fbf9f5;
+  border: 1px solid var(--border-color);
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.page-input {
+  width: 52px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--accent-color);
+  background: #ffffff;
+  border: 1px solid #d3cbbe;
+  border-radius: 4px;
+  padding: 2px 4px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.page-input:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 2px rgba(123, 30, 30, 0.15);
+}
+
+.page-input::-webkit-outer-spin-button,
+.page-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.page-input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.page-container {
+  max-width: 800px;
+  width: 100%;
+  margin: 25px auto;
+  background: var(--card-bg);
+  padding: 45px 55px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  flex: 1;
+}
+
+.page-number {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--meta-color);
+  margin-bottom: 24px;
+}
+
+.section-heading {
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--accent-color);
+  margin: 18px 0 20px 0;
+  line-height: 1.4;
+}
+
+.couplet-group {
+  margin: 18px 0;
+}
+
+.couplet {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.couplet.single {
+  margin: 6px 0;
+}
+
+.misra {
+  flex: 1;
+}
+
+.misra.left {
+  text-align: left;
+  padding-right: 18px;
+}
+
+.misra.right {
+  text-align: left;
+  padding-left: 18px;
+}
+
+.stanza {
+  margin: 22px auto;
+  text-align: center;
+  font-size: 16px;
+}
+
+.stanza-line {
+  margin-bottom: 6px;
+}
+
+.prose-block {
+  margin: 16px 0;
+  text-align: justify;
+  font-size: 15.5px;
+}
+
+.prose-block.cols-2 {
+  column-count: 2;
+  column-gap: 24px;
+}
+
+.prose-block p {
+  margin-bottom: 10px;
+  text-indent: 24px;
+}
+
+.divider {
+  width: 40%;
+  border: 0;
+  border-top: 1px solid #777;
+  margin: 24px auto;
+}
+
+.footnotes-container {
+  margin-top: 35px;
+  font-size: 13px;
+  color: #555;
+}
+
+.footnote-divider {
+  width: 25%;
+  border: 0;
+  border-top: 1px solid #aaa;
+  margin-bottom: 12px;
+}
+
+.footnote-item {
+  margin-bottom: 4px;
+}
+
+.fn-marker {
+  font-weight: bold;
+  color: var(--accent-color);
+  margin-right: 4px;
+}
+
+.index-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.book-title {
+  font-family: 'Rozha One', 'Noto Sans Devanagari', serif;
+  font-size: 34px;
+  color: var(--accent-color);
+  margin-bottom: 8px;
+}
+
+.book-subtitle {
+  font-size: 15px;
+  color: var(--meta-color);
+}
+
+.toc-list {
+  list-style: none;
+}
+
+.toc-item {
+  border-bottom: 1px dashed var(--border-color);
+}
+
+.toc-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 10px 6px;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.toc-link:hover {
+  background-color: #f7f3ec;
+  color: var(--accent-color);
+}
+
+.toc-title {
+  font-size: 16px;
+  font-weight: 500;
+  flex: 1;
+  padding-right: 15px;
+}
+
+.toc-page {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--meta-color);
+}
+
+@media (max-width: 640px) {
+  .page-container {
+    padding: 22px 18px;
+    margin: 10px auto;
+  }
+  .nav-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .couplet {
+    flex-direction: column;
+    margin-bottom: 14px;
+    text-align: center;
+  }
+  .misra.left, .misra.right {
+    padding: 0;
+    text-align: center;
+  }
+  .prose-block.cols-2 {
+    column-count: 1;
+  }
+}

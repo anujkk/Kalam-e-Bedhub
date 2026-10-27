@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>मिसरअ-ए-तरह़: फ़ग़ाँ बे-सदा में क्या अजब तासीर होती है - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 71;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_070.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="71" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_072.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">६७</div>
+        <h2 class="section-heading" style="text-align: center;">मिसरअ-ए-तरह़: फ़ग़ाँ बे-सदा में क्या अजब तासीर होती है</h2><div class="couplet-group"><div class="couplet"><div class="misra left">कहीं से लौट कर आने में जब ताख़ीर होती है</div><div class="misra right">कहूँ किस मुँह से जो घर में मेरी तौक़ीर होती है</div></div><div class="couplet"><div class="misra left">नहीं हिटलर के या तोजो के ग़ुस्से में असर इतना</div><div class="misra right">कि जितना घर-बसी के डाँट में तासीर होती है</div></div><div class="couplet"><div class="misra left">मुक़ैयद रात-दिन जो ख़ौफ़ से बी-बी के घर में हैं</div><div class="misra right">मेरी नज़रों में ज़न उन के लिए ज़ंजीर होती है</div></div><div class="couplet"><div class="misra left">हमारे दिल में चुभती बान जैसी इश्क़ का लगना</div><div class="misra right">ये चुन बोटी किया वो बल्कि धोलागीर होती है</div></div><div class="couplet"><div class="misra left">ये बोली नाइका है ज़ायक़ा ताज़ा खिचड़ी में</div><div class="misra right">मगर बे-ज़ायक़ा कब यार बासी खीर होती है</div></div><div class="couplet"><div class="misra left">अगर मजनूँ का बन जाता हूँ भाई इश्क़-बाज़ी में</div><div class="misra right">तो वो भी शक्ल में लैला ही की हमशीर होती है</div></div><div class="couplet"><div class="misra left">किसी के वास्ते ये तीर होती हो तो होती हो</div><div class="misra right"></div></div></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

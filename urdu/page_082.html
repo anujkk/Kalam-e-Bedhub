@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>نظم - کلامِ بیڈھب</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    const PAGES = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101];
+    function jumpToPage(inputElement) {
+      const val = parseInt(inputElement.value, 10);
+      if (PAGES.indexOf(val) !== -1) {
+        window.location.href = "page_" + String(val).padStart(3, "0") + ".html";
+      } else {
+        inputElement.value = 82;
+      }
+    }
+</script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_081.html">→ پچھلا</a>
+      <a class="nav-link" href="index.html">☰ فہرست</a>
+      <div class="page-jump-container">
+        <span>صفحہ</span>
+        <input
+          type="number"
+          class="page-input"
+          value="82"
+          min="2"
+          max="101"
+          title="صفحہ نمبر لکھ کر Enter دبائیں"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);"
+          onchange="jumpToPage(this);"
+        />
+        <span>/ ۱۰۱</span>
+      </div>
+      <a class="nav-link" href="page_083.html">اگلا ←</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">۷۸</div>
+        <h2 class="section-heading" style="text-align: center;">نظم</h2><div class="couplet-group"><div class="couplet"><div class="misra">ہے سبھا میں آج بیڈھب کیا بہار آئی ہوئی</div><div class="misra">ہے طبیعت ہر کسی کی کیسی اِترائی ہوئی</div></div><div class="couplet"><div class="misra">جس کو دیکھو وہ خوشی میں مست ہے مسرور ہے</div><div class="misra">آپے سے باہر ہے ہر کس بے پیئے مخمور ہے</div></div><div class="couplet"><div class="misra">کثرتِ انساں نہیں بڑھنے کی کیا تدبیر ہے</div><div class="misra">فوڈ منسٹر کے لئے سپلائی ٹیڑھی کھیر ہے</div></div><div class="couplet"><div class="misra">لیڈروں کو فیملی پلاننگ کی ہے دُھن سوار</div><div class="misra">سُو لبھ کرنے میں اُنہیں آتا ہے پر جارُ ابھار</div></div><div class="couplet"><div class="misra">جب نہیں ترکیب سوجھے کام بیڈھب کیجئے</div><div class="misra">لیجئے حکمت سے کام اور نام پیدا کیجئے</div></div><div class="couplet"><div class="misra">بَرتھ اور میرج پر ہیوی ٹیکس ہونا چاہئے</div><div class="misra">اس پہ جو مانے نہیں تو پھانسی دینا چاہئے</div></div><div class="couplet"><div class="misra">برتھ کا ہو کنٹرول اور ڈیتھ کا پرمٹ عام ہو</div><div class="misra">پیٹ بھر کھانا ملے سُکھ چین ہو، آرام ہو</div></div><div class="couplet"><div class="misra">فی زمانہ جب کہ ہے ہر چیز ہی کا کنٹرول</div><div class="misra">صرف بی بی پر نہیں چلتا کسی کا کنٹرول</div></div><div class="couplet"><div class="misra">یہ نہ سمجھیں کہ فقط ہنسنا ہنسانا کام ہے</div><div class="misra">اپنے ڈھب میں بات بیڈھب ڈھب کی کہنا کام ہے</div></div></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>

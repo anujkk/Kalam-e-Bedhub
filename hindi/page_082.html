@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>नज़्म - कलाम-ए-बेढब</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function jumpToPage(inputElement) {
+      let val = parseInt(inputElement.value, 10);
+      if (!isNaN(val) && val >= 2 && val <= 101) {
+        let formatted = String(val).padStart(3, '0');
+        window.location.href = "page_" + formatted + ".html";
+      } else {
+        inputElement.value = 82;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="book-nav">
+    <div class="nav-container">
+      <a class="nav-link" href="page_081.html">← पिछला</a>
+      <a class="nav-link" href="index.html">☰ विषय-सूची</a>
+      <div class="page-jump-container">
+        <span>पृष्ठ</span>
+        <input 
+          type="number" 
+          class="page-input" 
+          value="82" 
+          min="2" 
+          max="101" 
+          title="पृष्ठ संख्या लिखकर Enter दबाएँ"
+          onkeydown="if(event.key === 'Enter') jumpToPage(this);" 
+          onchange="jumpToPage(this);"
+        />
+        <span>/ 101</span>
+      </div>
+      <a class="nav-link" href="page_083.html">अगला →</a>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <article class="page-sheet">
+      <div class="content-area">
+        <div class="page-number">७८</div>
+        <h2 class="section-heading" style="text-align: center;">नज़्म</h2><div class="couplet-group"><div class="couplet"><div class="misra left">है सभा में आज बेढब क्या बहार आई हुई</div><div class="misra right">है तबीअ़त हर किसी की कैसी इतराई हुई</div></div><div class="couplet"><div class="misra left">जिस को देखो वो ख़ुशी में मस्त है मसरूर है</div><div class="misra right">आपे से बाहर है हर कस बे पिए मख़मूर है</div></div><div class="couplet"><div class="misra left">कसरत-ए-इंसाँ नहीं बढ़ने की क्या तदबीर है</div><div class="misra right">फ़ूड मिनिस्टर के लिए सप्लाई टेढ़ी खीर है</div></div><div class="couplet"><div class="misra left">लीडरों को फैमिली प्लानिंग की है धुन सवार</div><div class="misra right">सुलझे करने में उन्हें आता है पर जाड़ा-बुख़ार</div></div><div class="couplet"><div class="misra left">जब नहीं तरकीब सूझे काम बेढब कीजिए</div><div class="misra right">लीजिए हिकमत से काम और नाम पैदा कीजिए</div></div><div class="couplet"><div class="misra left">बर्थ और मैरिज पर हेवी टैक्स होना चाहिए</div><div class="misra right">इस पर जो माने नहीं तो फाँसी देना चाहिए</div></div><div class="couplet"><div class="misra left">बर्थ का हो कंट्रोल और डैथ का परमिट आम हो</div><div class="misra right">पेट भर खाना मिले सुख चैन हो, आराम हो</div></div><div class="couplet"><div class="misra left">फ़िज़माना जब कि है हर चीज़ ही का कंट्रोल</div><div class="misra right">सिर्फ़ बी-बी पर नहीं चलता किसी का कंट्रोल</div></div><div class="couplet"><div class="misra left">ये न समझें कि फ़क़त हँसना हँसाना काम है</div><div class="misra right">अपने ढब में बात बेढब ढब की कहना काम है</div></div></div>
+      </div>
+      
+    </article>
+    
+  </main>
+</body>
+</html>
